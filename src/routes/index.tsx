@@ -101,6 +101,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div class="mt-[164px] bg-[#f1f1f1] flex flex-col items-center pt-[70px] pb-[90px]">
+        <h2 class="font-[Poppins] text-[45px] text-[#c5c5c5] font-semibold">
+          Weekly - Top NFT
+        </h2>
+      </div>
     </main>
   );
 }
