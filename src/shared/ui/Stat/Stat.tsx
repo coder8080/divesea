@@ -1,10 +1,11 @@
 type StatProps = {
   count: number;
   caption: string;
+  class?: string;
 };
 
 const Stat = (props: StatProps) => (
-  <div>
+  <div class={props.class}>
     <p class="font-[PublicSans] font-semibold text-[36px] text-[#141416]">
       {props.count}K+
     </p>
