@@ -10,6 +10,8 @@ import GridTitle from "~/shared/ui/GridTitle";
 import { Navigation } from "swiper/modules";
 import { createEffect, createMemo, For } from "solid-js";
 import GridRow from "~/shared/ui/GridRow";
+import ListItem from "~/shared/ui/ListItem";
+import Account from "~/shared/ui/Account";
 
 export default function Home() {
   createEffect(() => {
@@ -32,6 +34,7 @@ export default function Home() {
   });
 
   const gridRows = createMemo(() => NFTS.slice(0, 4));
+  const accounts = createMemo(() => NFTS.slice(0, 6));
 
   return (
     <main>
@@ -156,13 +159,13 @@ export default function Home() {
             <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[26px] rounded-full" />
           </div>
         </div>
-        <Recent />
+        <Recent class="absolute right-[80px] bottom-0 translate-y-1/2" />
       </div>
-      <div class="mt-[240px] flex flex-col items-center gap-[90px]">
+      <div class="mt-[240px] flex flex-col items-center px-[100px] max-w-[1440px] mx-auto">
         <h2 class="capitalize font-[Poppins] font-semibold text-[44px] text-[#141416]">
           Top Collection
         </h2>
-        <div class="grid grid-cols-[1fr_auto_auto_auto_auto_auto] grid-rows-[repeat(5, 84px, 1px)] w-full gap-x-[80px] px-[100px] max-w-[1440px]">
+        <div class="grid grid-cols-[1fr_auto_auto_auto_auto_auto] grid-rows-[repeat(5, 84px, 1px)] w-full gap-x-[80px] mt-[90px]">
           <GridTitle>Collection</GridTitle>
           <GridTitle>Volume</GridTitle>
           <GridTitle>24h %</GridTitle>
@@ -170,6 +173,81 @@ export default function Home() {
           <GridTitle>Owners</GridTitle>
           <GridTitle>Items</GridTitle>
           <For each={gridRows()}>{(item) => <GridRow {...item} />}</For>
+        </div>
+        <a class="font-[Poppins] font-[500] text-[17px] text-[#ACADB9] inline-flex flex-row items-center gap-[16px] capitalize self-end mt-[40px]">
+          Explore All
+          <img src="/icons/link-arrow.svg" />
+        </a>
+      </div>
+      <div class="grid grid-cols-[auto_1fr] px-[100px] mt-[140px]">
+        <div class="flex flex-col items-start">
+          <h2 class="capitalize font-[Poppins] font-[600] text-[45px] text-[#C5C5C5]">
+            Just Unleash -
+          </h2>
+          <h2 class="capitalize font-[Poppins] font-[600] text-[45px] text-[#18181B]">
+            Your Inner Collector
+          </h2>
+          <div class="flex flex-col items-start gap-[18px] mt-[50px]">
+            <ListItem>Best Seller All Around World</ListItem>
+            <ListItem>$2M+ Transections Every Day</ListItem>
+            <ListItem>Secure Transactions</ListItem>
+            <ListItem>Exclusive Collections From Sellers</ListItem>
+            <ListItem>Easy Buying and Selling</ListItem>
+            <ListItem>Join Our Community</ListItem>
+          </div>
+        </div>
+        <div class="relative mx-auto bg-white rounded-3xl flex flex-col gap-[24px] px-[22px] py-[26px] w-[320px]">
+          <h3 class="capitalize font-[Poppins] font-[600] text-[16px] text-[#1A202C]">
+            Best Sellers
+          </h3>
+          <div class="flex flex-col gap-[18px]">
+            <For each={accounts()}>
+              {(item, index) => <Account {...item} index={index()} />}
+            </For>
+          </div>
+          <Recent class="absolute left-0 bottom-0 translate-y-1/3 -translate-x-1/2 shadow-xl border border-[#EDF2F7]" />
+          <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[325px] p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[12px] bg-white shadow-xl rounded-2xl">
+            <div class="rounded-full w-[7.6px] aspect-square bg-[#141416] self-center" />
+            <div
+              class="rounded-full w-[40px] aspect-square relative"
+              style={{
+                "background-image": `url("/images/1.png")`,
+                "background-size": "cover",
+                "background-position": "center",
+              }}
+            >
+              <img
+                src="/icons/verified.svg"
+                class="aspect-square w-[17px] absolute top-0 right-0 translate-x-1/4"
+              />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex flex-row gap-[5.7px]">
+                <span class="font-[Poppins] font-[500] text-[13.29px] text-[#949494] block">
+                  New bid
+                </span>
+                <span class="font-[Poppins] font-[500] text-[13.29px] text-[#141416] block">
+                  Rotation
+                </span>
+              </div>
+              <span class="block font-[Poppins] font-[600] text-[11.39px] text-[#141416]">
+                0.002 ETH
+              </span>
+            </div>
+            <div />
+            <div
+              class="row-span-2 rounded-xl w-[60.76px] aspect-square"
+              style={{
+                "background-image": `url("/images/1.png")`,
+                "background-position": "center",
+                "background-size": "cover",
+              }}
+            ></div>
+            <div class="col-span-2" />
+            <div class="font-[Poppins] font-[600] text-[11.39px] text-[#949494]">
+              6 Oct 2022, 11:44 PM
+            </div>
+          </div>
         </div>
       </div>
     </main>
