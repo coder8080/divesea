@@ -5,6 +5,7 @@ import { Suspense } from "solid-js";
 import Nav from "~/shared/ui/Nav";
 import "./app.css";
 import "atropos/css";
+import "swiper/css";
 
 export default function App() {
   return (
