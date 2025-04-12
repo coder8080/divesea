@@ -18,9 +18,9 @@ const Button = (props: ButtonProps) => (
         props.size === "md",
       "uppercase font-[Poppins] lg:text-[17px] lg:px-[24px] lg:py-[16px]":
         props.size === "lg",
-      "capitalize font-[Outfit] text-[21.36px] px-[25.53px] py-[19.83px]":
+      "capitalize font-[Outfit] text-[11px] px-[12px] py-[10px] lg:text-[21.36px] lg:px-[25.53px] lg:py-[19.83px]":
         props.size === "xl",
-      "capitalize font-[Outfit] text-[21.36px] px-[30.53px] py-[19.83px]":
+      "capitalize font-[Outfit] text-[11px] px-[14px] py-[10px] lg:text-[21.36px] lg:px-[30.53px] lg:py-[19.83px]":
         props.size === "xl2",
       "bg-[#141414] hover:bg-[#555] text-white": props.fill,
       "hover:bg-[#f0f0f0] text-black": !props.fill,

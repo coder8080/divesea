@@ -253,16 +253,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div class="px-[97px] mt-[200px] w-full">
-        <div class="w-full max-w-[1245px] rounded-2xl bg-[#141416] flex justify-between p-[31px] mx-auto">
-          <div class="flex flex-col mt-[13.22px] ml-[35px]">
-            <h2 class="font-[Poppins] font-[600] text-[45px] text-white">
+      <div class="px-[27px] lg:px-[97px] mt-[140px] lg:mt-[200px] w-full">
+        <div class="w-full max-w-[1245px] rounded-2xl bg-[#141416] flex flex-col lg:flex-row gap-[36px] lg:gap-0 justify-between px-[40px] py-[22px] lg:px-[31px] lg:py-[31px] mx-auto">
+          <div class="flex flex-col lg:mt-[13.22px] lg:ml-[35px] items-center text-center">
+            <h2 class="font-[Poppins] font-semibold text-[22px] lg:text-[45px] text-white">
               Create and Sell NFTs
             </h2>
-            <p class="font-[Poppins] font-[500] text-[20.27px] text-[#a4a4a4] mt-[12.48px]">
+            <p class="font-[Poppins] font-medium text-[10px] lg:text-[20.27px] text-[#a4a4a4] mt-[6px] lg:mt-[12.48px]">
               World’s Largest NFT Place
             </p>
-            <div class="flex flex-row justify-start gap-[30.51px] mt-auto">
+            <div class="flex flex-row justify-center lg:justify-start gap-[15px] lg:gap-[30.51px] mt-[25px] lg:mt-auto">
               <Button size="xl" white>
                 Explore More
               </Button>
@@ -271,7 +271,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div class="relative w-[369px] h-[249px]">
+          <div class="relative w-full lg:w-[369px] aspect-369/249">
             <div
               class="absolute inset-0 rounded-xl z-2"
               style={{
@@ -281,7 +281,7 @@ export default function Home() {
               }}
             />
             <div
-              class="absolute top-[15px] left-[-12px] right-[-9px] bottom-[-15px] z-1"
+              class="absolute top-0 lg:top-[15px] left-[-8px] lg:left-[-12px] right-[-6px] lg:right-[-9px] bottom-[-8px] lg:bottom-[-15px] z-1"
               style={{
                 "background-image": `url("/images/1.png")`,
                 "background-position": "center",
