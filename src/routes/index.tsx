@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main class="max-w-full overflow-hidden">
       <ScrollReveal />
-      <div class="mt-[80px] flex flex-col lg:flex-row gap-[48px] justify-center">
+      <div class="mt-[20px] lg:mt-[80px] flex flex-col lg:flex-row gap-[48px] justify-center">
         <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 lg:ml-25 lg:max-w-[568px] lg:w-44/100 mt-[10px]">
           <div class="bg-[#201f1f] h-[1px] w-[195px] reveal-hr invisible hidden lg:block" />
           <h1 class="font-[Poppins] font-semibold text-[47.4px]/[120%] tracking-[-1.9px] lg:text-[75px]/[120%] lg:mt-[10px] reveal-title invisible">
@@ -148,12 +148,15 @@ export default function Home() {
           </div>
           <div class="flex flex-row bg-white w-[102px] h-[42px] lg:h-[68px] lg:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
             <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
-              <img src="/icons/arrow-left.svg" class="w-[16px] aspect-square" />
+              <img
+                src="/icons/arrow-left.svg"
+                class="w-[16px] lg:w-[26px] aspect-square"
+              />
             </button>
             <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
               <img
                 src="/icons/arrow-right.svg"
-                class="w-[16px] aspect-square"
+                class="w-[16px] lg:w-[26px] aspect-square"
               />
             </button>
             <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] lg:h-[26px] rounded-full" />
@@ -165,29 +168,29 @@ export default function Home() {
         <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[44px] text-[#141416]">
           Top Collection
         </h2>
-        <div class="grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full gap-x-[80px] mt-[90px]">
+        <div class="grid grid-cols-[1fr_auto] grid-rows-6 lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full lg:gap-x-[80px] mt-[40px] lg:mt-[90px]">
           <GridTitle>Collection</GridTitle>
-          <GridTitle>Volume</GridTitle>
+          <GridTitle class="text-end">Volume</GridTitle>
           <GridTitle onlyLarge>24h %</GridTitle>
           <GridTitle onlyLarge>Floor Price</GridTitle>
           <GridTitle onlyLarge>Owners</GridTitle>
           <GridTitle onlyLarge>Items</GridTitle>
           <For each={gridRows()}>{(item) => <GridRow {...item} />}</For>
         </div>
-        <a class="font-[Poppins] font-[500] text-[17px] text-[#ACADB9] inline-flex flex-row items-center gap-[16px] capitalize self-end mt-[40px]">
+        <a class="font-[Poppins] font-medium text-[#ACADB9] text-[13px] lg:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
           Explore All
           <img src="/icons/link-arrow.svg" />
         </a>
       </div>
-      <div class="grid grid-cols-[auto_1fr] px-[100px] mt-[140px] max-w-[1245px] mx-auto">
-        <div class="flex flex-col items-start">
-          <h2 class="capitalize font-[Poppins] font-[600] text-[45px] text-[#C5C5C5]">
+      <div class="grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] gap-[80px] lg:gap-0 px-[30] lg:px-[100px] mt-[140px] max-w-[1245px] mx-auto">
+        <div class="flex flex-col items-center lg:items-start">
+          <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[45px] text-[#C5C5C5]">
             Just Unleash -
           </h2>
-          <h2 class="capitalize font-[Poppins] font-[600] text-[45px] text-[#18181B]">
+          <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[45px] text-[#18181B]">
             Your Inner Collector
           </h2>
-          <div class="flex flex-col items-start gap-[18px] mt-[50px]">
+          <div class="hidden lg:flex flex-col items-start gap-[18px] mt-[50px]">
             <ListItem>Best Seller All Around World</ListItem>
             <ListItem>$2M+ Transections Every Day</ListItem>
             <ListItem>Secure Transactions</ListItem>
@@ -196,20 +199,20 @@ export default function Home() {
             <ListItem>Join Our Community</ListItem>
           </div>
         </div>
-        <div class="relative mx-auto bg-white rounded-3xl flex flex-col gap-[24px] px-[22px] py-[26px] w-[320px]">
-          <h3 class="capitalize font-[Poppins] font-[600] text-[16px] text-[#1A202C]">
+        <div class="relative mx-auto bg-white rounded-3xl flex flex-col gap-[24px] px-[10px] lg:px-[22px] py-[12px] lg:py-[26px] w-[150px] lg:w-[320px]">
+          <h3 class="capitalize font-[Poppins] font-semibold text-[8px] lg:text-[16px] text-[#1A202C]">
             Best Sellers
           </h3>
-          <div class="flex flex-col gap-[18px]">
+          <div class="flex flex-col gap-[8px] lg:gap-[18px]">
             <For each={accounts()}>
               {(item, index) => <Account {...item} index={index()} />}
             </For>
           </div>
-          <Recent class="absolute left-0 bottom-0 translate-y-1/3 -translate-x-1/2 shadow-xl border border-[#EDF2F7]" />
-          <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[325px] p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[12px] bg-white shadow-xl rounded-2xl">
-            <div class="rounded-full w-[7.6px] aspect-square bg-[#141416] self-center" />
+          <Recent class="flex absolute left-0 bottom-0 translate-y-1/3 -translate-x-1/2 shadow-xl border border-[#EDF2F7]" />
+          <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[325px] p-[6px] lg:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
+            <div class="rounded-full w-[3.63px] lg:w-[7.6px] aspect-square bg-[#141416] self-center" />
             <div
-              class="rounded-full w-[40px] aspect-square relative"
+              class="rounded-full w-[20px] lg:w-[40px] aspect-square relative"
               style={{
                 "background-image": `url("/images/1.png")`,
                 "background-size": "cover",
@@ -218,25 +221,25 @@ export default function Home() {
             >
               <img
                 src="/icons/verified.svg"
-                class="aspect-square w-[17px] absolute top-0 right-0 translate-x-1/4"
+                class="aspect-square w-[8px] lg:w-[17px] absolute top-0 right-0 translate-x-1/4"
               />
             </div>
             <div class="flex flex-col">
-              <div class="flex flex-row gap-[5.7px]">
-                <span class="font-[Poppins] font-[500] text-[13.29px] text-[#949494] block">
+              <div class="flex flex-row gap-[3px] lg:gap-[5.7px]">
+                <span class="font-[Poppins] font-medium text-[6px] lg:text-[13.29px] text-[#949494] block">
                   New bid
                 </span>
-                <span class="font-[Poppins] font-[500] text-[13.29px] text-[#141416] block">
+                <span class="font-[Poppins] font-medium text-[6px] lg:text-[13.29px] text-[#141416] block">
                   Rotation
                 </span>
               </div>
-              <span class="block font-[Poppins] font-[600] text-[11.39px] text-[#141416]">
+              <span class="block font-[Poppins] font-semibold text-[6px] lg:text-[11.39px] text-[#141416]">
                 0.002 ETH
               </span>
             </div>
             <div />
             <div
-              class="row-span-2 rounded-xl w-[60.76px] aspect-square"
+              class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[60px] aspect-square"
               style={{
                 "background-image": `url("/images/1.png")`,
                 "background-position": "center",
@@ -244,7 +247,7 @@ export default function Home() {
               }}
             ></div>
             <div class="col-span-2" />
-            <div class="font-[Poppins] font-[600] text-[11.39px] text-[#949494]">
+            <div class="font-[Poppins] font-semibold text-[6px] lg:text-[12px] text-[#949494]">
               6 Oct 2022, 11:44 PM
             </div>
           </div>

@@ -14,15 +14,15 @@ const Recent = (props: Props) => {
 
   return (
     <div
-      class={`bg-white rounded-2xl flex-col gap-[28px] w-[365px] px-[24px] py-[26px] ${props.class || ""}`}
+      class={`bg-white rounded-2xl flex-col gap-[12px] lg:gap-[28px] w-[150px] lg:w-[365px] px-[10px] lg:px-[24px] py-[11px] lg:py-[26px] ${props.class || ""}`}
     >
       <div class="flex flex-row justify-between">
-        <p class="font-[Poppins] font-semibold text-[22px] text-[#1a202c] capitalize">
+        <p class="font-[Poppins] font-semibold text-[8px] lg:text-[22px] text-[#1a202c] capitalize">
           Recently Viewed
         </p>
-        <img src="/icons/menu.svg" />
+        <img src="/icons/menu.svg" class="w-[10px]" />
       </div>
-      <div class="flex flex-col gap-[20px]">
+      <div class="flex flex-col gap-[14px] lg:gap-[20px]">
         <For each={recents()}>
           {(item, index) => <Row {...item} index={index()} />}
         </For>
