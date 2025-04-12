@@ -1,5 +1,5 @@
 const Footer = () => (
-  <div class="w-full pt-[92px] px-[96px] pb-[81px] bg-[#141416] mt-[150px]">
+  <div class="w-full pt-[92px] px-[96px] pb-[81px] bg-[#141416] mt-[150px] hidden">
     <div class="flex flex-row gap-[70px] items-center">
       <div class="grow flex flex-row items-center gap-[9.88px]">
         <img src="/icons/wave_white.svg" class="aspect-square w-[65px]" />

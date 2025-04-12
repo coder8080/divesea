@@ -24,7 +24,6 @@ export default function Home() {
       modules: [Navigation],
       loop: true,
       slidesPerView: "auto",
-      spaceBetween: 40,
       centeredSlides: true,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -37,15 +36,15 @@ export default function Home() {
   const accounts = createMemo(() => NFTS.slice(0, 6));
 
   return (
-    <main>
+    <main class="max-w-full overflow-hidden">
       <ScrollReveal />
-      <div class="mt-[80px] flex flex-row gap-[48px] justify-center">
-        <div class="ml-25 max-w-[568px] w-44/100 mt-[10px]">
-          <div class="bg-[#201f1f] h-[1px] w-[195px] reveal-hr invisible" />
-          <h1 class="font-[Poppins] font-semibold text-[75px]/[120%] mt-[10px] reveal-title invisible">
+      <div class="mt-[80px] flex flex-col lg:flex-row gap-[48px] justify-center">
+        <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 lg:ml-25 lg:max-w-[568px] lg:w-44/100 mt-[10px]">
+          <div class="bg-[#201f1f] h-[1px] w-[195px] reveal-hr invisible hidden lg:block" />
+          <h1 class="font-[Poppins] font-semibold text-[47.4px]/[120%] tracking-[-1.9px] lg:text-[75px]/[120%] lg:mt-[10px] reveal-title invisible">
             Discover And Create NFTs
           </h1>
-          <p class="max-w-[500px] font-[Inter] font-normal text-[#676767] text-[18px] reveal-desc invisible">
+          <p class="mt-[10px] lg:mt-[12px] max-w-[500px] font-[Inter] font-normal text-[#676767] text-[18px] reveal-desc invisible">
             Discover, Create and Sell NFTs On Our NFT Marketplace With Over
             Thousands Of NFTs And Get a $20 bonus.
           </p>
@@ -57,7 +56,7 @@ export default function Home() {
               Create NFT
             </Button>
           </div>
-          <div class="flex flex-row gap-[46px] mt-[82px]">
+          <div class="hidden lg:flex flex-row gap-[46px] mt-[82px]">
             <Stat
               count={430}
               caption="Art Works"
@@ -75,105 +74,104 @@ export default function Home() {
             />
           </div>
         </div>
-        <div class="max-w-[758px] aspect-758/522 w-56/100 flex flex-row gap-[6.3%] relative self-start">
-          <img
-            src="/arrow.svg"
-            class="absolute top-50/522 w-128/758 right-184/758 reveal-arrow invisible"
-          />
-          <div class="w-390/758 self-start relative">
-            <div class="atropos atropos-img1 mt-[20px] mb-[24px] reveal-img1 invisible">
-              <div class="atropos-scale">
-                <div class="atropos-rotate">
-                  <div class="atropos-inner">
-                    <div
-                      class="w-full rounded-2xl aspect-square"
-                      style={{
-                        "background-image": 'url("/images/1.png")',
-                        "background-position": "center",
-                        "background-size": "cover",
-                      }}
-                    />
+        <div class="w-full pl-[30px] lg:pl-0 lg:max-w-[758px] lg:w-56/100 flex self-start">
+          <div class="w-[calc(100%+55px)] mr-[-55px] lg:w-full lg:mr-0 aspect-758/522 flex gap-[6.3%] relative ">
+            <img
+              src="/arrow.svg"
+              class="absolute top-50/522 w-128/758 right-184/758 reveal-arrow invisible"
+            />
+            <div class="w-390/758 self-start relative">
+              <div class="atropos atropos-img1 mt-[calc(20/390*100)%] mb-[cal(24/390*100)] reveal-img1 invisible">
+                <div class="atropos-scale">
+                  <div class="atropos-rotate">
+                    <div class="atropos-inner">
+                      <div
+                        class="w-full rounded-2xl aspect-square"
+                        style={{
+                          "background-image": 'url("/images/1.png")',
+                          "background-position": "center",
+                          "background-size": "cover",
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1"
-              style={{
-                "background-image": 'url("/images/1.png")',
-                "background-position": "center",
-                "background-size": "cover",
-                filter: "blur(50px)",
-              }}
-            />
-          </div>
-          <div class="relative w-320/758 flex flex-row">
-            <div class="w-full relative self-end reveal-img2 invisible">
-              <div
-                class="w-full rounded-2xl aspect-square mb-[24px]"
-                style={{
-                  "background-image": 'url("/img-source.png")',
-                  "background-position": "center",
-                  "background-size": "cover",
-                }}
-              />
               <div
                 class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1"
                 style={{
-                  "background-image": 'url("/img-source.png")',
+                  "background-image": 'url("/images/1.png")',
                   "background-position": "center",
                   "background-size": "cover",
                   filter: "blur(50px)",
                 }}
               />
             </div>
-            <div
-              style={{
-                "background-image": "radial-gradient(#000 2px, transparent 0)",
-                "background-size": "16px 16px",
-              }}
-              class="absolute right-0 top-0 w-110/320 h-170/522 reveal-grid invisible"
-            />
+            <div class="relative w-320/758 flex flex-row">
+              <div class="w-full relative self-end reveal-img2 invisible">
+                <div
+                  class="w-full rounded-2xl aspect-square mb-[24px]"
+                  style={{
+                    "background-image": 'url("/img-source.png")',
+                    "background-position": "center",
+                    "background-size": "cover",
+                  }}
+                />
+                <div
+                  class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1"
+                  style={{
+                    "background-image": 'url("/img-source.png")',
+                    "background-position": "center",
+                    "background-size": "cover",
+                    filter: "blur(50px)",
+                  }}
+                />
+              </div>
+              <div class="absolute right-[55px] lg:right-0 top-0 w-110/320 h-170/522 reveal-grid invisible bg-size-[8px_8px] lg:bg-size-[16px_16px] -z-1 bg-[radial-gradient(#000_1px,_transparent_0)] lg:bg-[radial-gradient(#000_2px,_transparent_0)]" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="mt-[164px] bg-[#f1f1f1] flex flex-col items-center pt-[70px] pb-[90px] max-w-screen relative">
-        <h2 class="font-[Poppins] text-[45px] text-[#c5c5c5] font-semibold">
+      <div class="text-center lg:text-start mt-[80px] lg:mt-[164px] bg-[#f1f1f1] flex flex-col items-center pt-[70px] pb-[55px] lg:pb-[90px] max-w-screen relative">
+        <h2 class="font-[Poppins] text-[30px] lg:text-[45px] text-[#c5c5c5] font-semibold">
           Weekly - Top NFT
         </h2>
-        <div class="swiper mt-[100px] max-w-full transform-none">
+        <div class="swiper mt-[60px] lg:mt-[100px] max-w-full transform-none">
           <div class="swiper-wrapper max-w-full transform-none">
             <For each={NFTS}>
               {(item) => (
-                <div class="swiper-slide w-[280px] max-w-[280px]">
+                <div class="swiper-slide flex flex-col max-w-[230px] lg:max-w-[320px] px-[15px] lg:px-[20px]">
                   <Card {...item} />
                 </div>
               )}
             </For>
           </div>
-          <div class="flex flex-row bg-white h-[68px] w-[166px] rounded-2xl mx-auto mt-[60px] relative">
+          <div class="flex flex-row bg-white w-[102px] h-[42px] lg:h-[68px] lg:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
             <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
-              <img src="/icons/arrow-left.svg" />
+              <img src="/icons/arrow-left.svg" class="w-[16px] aspect-square" />
             </button>
             <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
-              <img src="/icons/arrow-right.svg" />
+              <img
+                src="/icons/arrow-right.svg"
+                class="w-[16px] aspect-square"
+              />
             </button>
-            <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[26px] rounded-full" />
+            <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] lg:h-[26px] rounded-full" />
           </div>
         </div>
-        <Recent class="absolute right-[80px] bottom-0 translate-y-1/2" />
+        <Recent class="absolute right-[80px] bottom-0 translate-y-1/2 hidden lg:flex" />
       </div>
-      <div class="mt-[240px] flex flex-col items-center px-[100px] max-w-[1440px] mx-auto">
-        <h2 class="capitalize font-[Poppins] font-semibold text-[44px] text-[#141416]">
+      <div class="mt-[78px] lg:mt-[240px] flex flex-col items-center px-[30px] lg:px-[100px] max-w-[1440px] mx-auto">
+        <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[44px] text-[#141416]">
           Top Collection
         </h2>
-        <div class="grid grid-cols-[1fr_auto_auto_auto_auto_auto] grid-rows-[repeat(5, 84px, 1px)] w-full gap-x-[80px] mt-[90px]">
+        <div class="grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full gap-x-[80px] mt-[90px]">
           <GridTitle>Collection</GridTitle>
           <GridTitle>Volume</GridTitle>
-          <GridTitle>24h %</GridTitle>
-          <GridTitle>Floor Price</GridTitle>
-          <GridTitle>Owners</GridTitle>
-          <GridTitle>Items</GridTitle>
+          <GridTitle onlyLarge>24h %</GridTitle>
+          <GridTitle onlyLarge>Floor Price</GridTitle>
+          <GridTitle onlyLarge>Owners</GridTitle>
+          <GridTitle onlyLarge>Items</GridTitle>
           <For each={gridRows()}>{(item) => <GridRow {...item} />}</For>
         </div>
         <a class="font-[Poppins] font-[500] text-[17px] text-[#ACADB9] inline-flex flex-row items-center gap-[16px] capitalize self-end mt-[40px]">

@@ -14,7 +14,7 @@ const Recent = (props: Props) => {
 
   return (
     <div
-      class={`bg-white rounded-2xl flex flex-col gap-[28px] w-[365px] px-[24px] py-[26px] ${props.class || ""}`}
+      class={`bg-white rounded-2xl flex-col gap-[28px] w-[365px] px-[24px] py-[26px] ${props.class || ""}`}
     >
       <div class="flex flex-row justify-between">
         <p class="font-[Poppins] font-semibold text-[22px] text-[#1a202c] capitalize">

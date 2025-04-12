@@ -10,13 +10,13 @@ type ButtonProps = ParentProps & {
 
 const Button = (props: ButtonProps) => (
   <button
-    class={`rounded-2xl whitespace-nowrap font-semibold cursor-pointer hover:scale-102 transition active:scale-98 ${props.class || ""}`}
+    class={`rounded-xl lg:rounded-2xl whitespace-nowrap font-semibold cursor-pointer hover:scale-102 transition active:scale-98 ${props.class || ""}`}
     classList={{
-      "uppercase font-[Poppins] text-[14px] px-[26px] py-[16px]":
+      "uppercase font-[Poppins] text-[10px] px-[18px] py-[10px] lg:text-[14px] lg:px-[26px] lg:py-[16px]":
         props.size === "sm",
-      "uppercase font-[Poppins] text-[16px] px-[30px] py-[18px]":
+      "uppercase font-[Poppins] text-[12px] px-[21px] py-[15px] lg:text-[16px] lg:px-[30px] lg:py-[18px]":
         props.size === "md",
-      "uppercase font-[Poppins] text-[17px] px-[24px] py-[16px]":
+      "uppercase font-[Poppins] lg:text-[17px] lg:px-[24px] lg:py-[16px]":
         props.size === "lg",
       "capitalize font-[Outfit] text-[21.36px] px-[25.53px] py-[19.83px]":
         props.size === "xl",

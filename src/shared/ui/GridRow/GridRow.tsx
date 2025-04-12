@@ -32,14 +32,26 @@ const GridRow = (props: Props) => {
           </span>
         </div>
       </div>
-      <Price size={24} weight={600} price={props.bid} class="self-center" />
+      <Price
+        size={16}
+        sizeLg={24}
+        weight={600}
+        price={props.bid}
+        class="self-center"
+      />
       <PriceDelta
         size={24}
         weight={500}
         delta={props.delta}
         class="self-center"
       />
-      <Price size={24} weight={600} price={props.bid} class="self-center" />
+      <Price
+        size={16}
+        sizeLg={24}
+        weight={600}
+        price={props.bid}
+        class="self-center"
+      />
       <span class="font-[Poppins] font-medium text-[24px] text-[#010101] self-center">
         {props.owners}K
       </span>
