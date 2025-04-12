@@ -39,6 +39,11 @@
     src: url("/fonts/DMSans.ttf");
 }
 
+@font-face {
+    font-family: Outfit;
+    src: url("/fonts/Outfit.ttf");
+}
+
 body {
     background-color: #f9f9f9;
 }
