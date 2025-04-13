@@ -1,28 +1,42 @@
+import "./styles.css";
+
 const Footer = () => (
-  <div class="w-full pt-[92px] px-[96px] pb-[81px] bg-[#141416] mt-[150px] hidden">
-    <div class="flex flex-row gap-[70px] items-center">
-      <div class="grow flex flex-row items-center gap-[9.88px]">
-        <img src="/icons/wave_white.svg" class="aspect-square w-[65px]" />
-        <span class="font-[Poppins] font-semibold text-[29.92px] text-white">
-          DiveSea
-        </span>
-      </div>
-      <span class="font-[Inter] font-medium text-[17.83px] text-[#B9B9B9]">
-        Privacy Policy
-      </span>
-      <span class="font-[Inter] font-medium text-[17.83px] text-[#B9B9B9]">
-        Terms & Conditions
-      </span>
-      <span class="font-[Inter] font-medium text-[17.83px] text-[#B9B9B9]">
-        About Us
-      </span>
-      <span class="font-[Inter] font-medium text-[17.83px] text-[#B9B9B9]">
-        Contact
+  <div class="footer">
+    <div class="grow flex flex-row items-center gap-[9.88px]">
+      <img
+        src="/icons/wave_white.svg"
+        class="aspect-square w-[44px] lg:w-[65px]"
+      />
+      <span class="font-[Poppins] font-semibold text-[20px] lg:text-[29.92px] text-white">
+        DiveSea
       </span>
     </div>
-    <div class="mt-[25px] w-full border-[1px] border-[#818181]" />
-    <div class="flex flex-row gap-[54px] mt-[56px]">
-      <p class="grow text-[#999999]">© 2023 EATLY All Rights Reserved.</p>
+    <span class="footer-link" id="footer-privacy">
+      Privacy Policy
+    </span>
+    <span class="footer-link" id="footer-terms">
+      Terms & Conditions
+    </span>
+    <span class="footer-link" id="footer-about">
+      About Us
+    </span>
+    <span class="footer-link" id="footer-contact">
+      Contact
+    </span>
+    <div
+      class="mt-[30px] lg:mt-[25px] mb-[26px] lg:mb-[56px] w-full border-[1px] border-[#818181]"
+      id="footer-line"
+    />
+    <p
+      class="text-center lg:text-start grow font-[Inter] font-medium text-[14px] lg:text-[17px] text-[#999999]"
+      id="footer-copyright"
+    >
+      © 2023 EATLY All Rights Reserved.
+    </p>
+    <div
+      class="flex flex-row gap-[20px] lg:gap-[54px] justify-end"
+      id="footer-social"
+    >
       <svg
         width="22"
         height="22"

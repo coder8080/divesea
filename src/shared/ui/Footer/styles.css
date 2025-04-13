@@ -1,0 +1,83 @@
+.footer {
+    width: 100%;
+    padding: 92px 96px 81px;
+    display: grid;
+    background-color: #141416;
+    margin-top: 150px;
+
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+
+    grid-template-areas:
+        "logo privacy terms about contact"
+        "line line line line line"
+        "copyright social social social social";
+
+    align-items: center;
+}
+
+.footer-link {
+    font-family: Inter;
+    font-weight: medium;
+    font-size: 17.83px;
+    color: #b9b9b9;
+    padding-left: 70px;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "logo social"
+            "privacy privacy"
+            "terms terms"
+            "about about"
+            "contact contact"
+            "line line"
+            "copyright copyright";
+
+        padding: 52px 30px 36px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    #footer-privacy {
+        padding-top: 50px;
+    }
+}
+
+.footer-line {
+    grid-area: line;
+}
+
+#footer-privacy {
+    grid-area: privacy;
+}
+
+#footer-terms {
+    grid-area: terms;
+}
+
+#footer-about {
+    grid-area: about;
+}
+
+#footer-contact {
+    grid-area: contact;
+}
+
+#footer-line {
+    grid-area: line;
+}
+
+#footer-copyright {
+    grid-area: copyright;
+}
+
+#footer-social {
+    grid-area: social;
+}
