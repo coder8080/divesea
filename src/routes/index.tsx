@@ -18,6 +18,7 @@ export default function Home() {
     Atropos({
       el: ".atropos-img1",
       shadow: false,
+      rotateTouch: "scroll-y",
     });
 
     new Swiper(".swiper", {

@@ -13,6 +13,7 @@ const Card = (props: Props) => {
       el: `.card-image-${id}`,
       shadow: false,
       activeOffset: 0,
+      rotateTouch: "scroll-y",
     });
   });
 
