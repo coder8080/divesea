@@ -11,17 +11,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install pnpm
-        run: npm i -g pnpm
       - name: Check out repository code
         id: checkout
         uses: actions/checkout@v4
+
       - name: Install packages
         id: install
-        run: pnpm install
+        run: npm install --legacy-peer-deps
+
       - name: Build static files
         id: build
-        run: pnpm run build
+        run: npm run build
+
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
