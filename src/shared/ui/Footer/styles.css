@@ -1,8 +1,16 @@
+.footer-container {
+    width: 100%;
+    background-color: #141416;
+}
+
 .footer {
     width: 100%;
-    padding: 92px 96px 81px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 92px 96px;
     display: grid;
-    background-color: #141416;
     margin-top: 150px;
 
     display: grid;
