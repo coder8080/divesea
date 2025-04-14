@@ -19,10 +19,6 @@ jobs:
         id: install
         run: npm install --legacy-peer-deps
 
-      - name: LS
-        id: ls
-        run: ls && pwd && ls /home/runner/work/divesea && ls /home/runner/work/divesea/divesea && ls /home/runner/work/divesea/divesea/src/shared/ui/Nav
-
       - name: Build static files
         id: build
         run: npm run build
