@@ -17,7 +17,7 @@ const Row = (props: Props) => {
           <div
             class="aspect-square w-[20px] lg:w-[46px] rounded-full"
             style={{
-              "background-image": `url("/images/${props.img}")`,
+              "background-image": `url("${props.img}")`,
               "background-position": "center",
               "background-size": "cover",
             }}
