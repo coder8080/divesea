@@ -12,11 +12,11 @@ import { createEffect, createMemo, For } from "solid-js";
 import GridRow from "~/shared/ui/GridRow";
 import ListItem from "~/shared/ui/ListItem";
 import Account from "~/shared/ui/Account";
-import Arrow from "~/assets/icons/arrow.svg";
-import ArrowLeft from "~/assets/icons/arrow-left.svg";
-import ArrowRight from "~/assets/icons/arrow-right.svg";
-import LinkArrow from "~/assets/icons/link-arrow.svg";
-import Verified from "~/assets/icons/verified.svg";
+import ArrowIcon from "~/assets/icons/arrow.svg";
+import ArrowLeftIcon from "~/assets/icons/arrow-left.svg";
+import ArrowRightIcon from "~/assets/icons/arrow-right.svg";
+import LinkArrowIcon from "~/assets/icons/link-arrow.svg";
+import VerifiedIcon from "~/assets/icons/verified.svg";
 import Img1 from "~/assets/images/1.png";
 import ImgSource from "~/assets/images/img-source.png";
 
@@ -85,7 +85,7 @@ export default function Home() {
         <div class="w-full pl-[30px] lg:pl-0 lg:max-w-[758px] lg:w-56/100 flex self-start">
           <div class="w-[calc(100%+55px)] mr-[-55px] lg:w-full lg:mr-0 aspect-758/522 flex gap-[6.3%] relative ">
             <img
-              src={Arrow}
+              src={ArrowIcon}
               class="absolute top-50/522 w-128/758 right-184/758 reveal-arrow invisible"
             />
             <div class="w-390/758 self-start relative">
@@ -156,11 +156,14 @@ export default function Home() {
           </div>
           <div class="flex flex-row bg-white w-[102px] h-[42px] lg:h-[68px] lg:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
             <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
-              <img src={ArrowLeft} class="w-[16px] lg:w-[26px] aspect-square" />
+              <img
+                src={ArrowLeftIcon}
+                class="w-[16px] lg:w-[26px] aspect-square"
+              />
             </button>
             <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
               <img
-                src={ArrowRight}
+                src={ArrowRightIcon}
                 class="w-[16px] lg:w-[26px] aspect-square"
               />
             </button>
@@ -184,7 +187,7 @@ export default function Home() {
         </div>
         <a class="font-[Poppins] font-medium text-[#ACADB9] text-[13px] lg:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
           Explore All
-          <img src={LinkArrow} />
+          <img src={LinkArrowIcon} />
         </a>
       </div>
       <div class="grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] gap-[80px] lg:gap-0 px-[30] lg:px-[100px] mt-[140px] max-w-[1245px] mx-auto">
@@ -225,7 +228,7 @@ export default function Home() {
               }}
             >
               <img
-                src={Verified}
+                src={VerifiedIcon}
                 class="aspect-square w-[8px] lg:w-[17px] absolute top-0 right-0 translate-x-1/4"
               />
             </div>
