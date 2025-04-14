@@ -1,3 +1,5 @@
+import EthIcon from "~/assets/icons/eth.svg";
+
 type Props = {
   size: number;
   sizeLg: number;
@@ -11,10 +13,7 @@ const Price = (props: Props) => (
   <div
     class={`${props.onlyLarge ? "hidden lg:flex" : "flex"} flex-row items-center gap-[4px] ${props.class || ""}`}
   >
-    <img
-      src="/icons/eth.svg"
-      class={`h-[${props.size}px] lg:h-[${props.sizeLg}px]`}
-    />
+    <img src={EthIcon} class={`h-[${props.size}px] lg:h-[${props.sizeLg}px]`} />
     <span
       class={`font-[Poppins] font-[${props.weight}] text-[#141416] text-[${props.size}px] lg:text-[${props.sizeLg}px]`}
     >

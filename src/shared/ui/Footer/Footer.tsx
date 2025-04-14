@@ -1,12 +1,10 @@
+import WaveWhite from "~/assets/icons/wave_white.svg";
 import "./styles.css";
 
 const Footer = () => (
   <div class="footer">
     <div class="grow flex flex-row items-center gap-[9.88px]">
-      <img
-        src="/icons/wave_white.svg"
-        class="aspect-square w-[44px] lg:w-[65px]"
-      />
+      <img src={WaveWhite} class="aspect-square w-[44px] lg:w-[65px]" />
       <span class="font-[Poppins] font-semibold text-[20px] lg:text-[29.92px] text-white">
         DiveSea
       </span>

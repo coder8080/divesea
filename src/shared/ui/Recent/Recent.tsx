@@ -1,6 +1,7 @@
 import RECENTS from "~/shared/data/recents";
 import NFTS from "~/shared/data/nfts";
 import Row from "./Row";
+import MenuIcon from "~/assets/icons/menu.svg";
 import { createMemo, For } from "solid-js";
 
 type Props = {
@@ -20,7 +21,7 @@ const Recent = (props: Props) => {
         <p class="font-[Poppins] font-semibold text-[8px] lg:text-[22px] text-[#1a202c] capitalize">
           Recently Viewed
         </p>
-        <img src="/icons/menu.svg" class="w-[10px]" />
+        <img src={MenuIcon} class="w-[10px]" />
       </div>
       <div class="flex flex-col gap-[14px] lg:gap-[20px]">
         <For each={recents()}>
