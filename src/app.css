@@ -2,46 +2,46 @@
 
 @font-face {
     font-family: Inter;
-    src: url("/fonts/Inter.ttf");
+    src: url("/divesea/fonts/Inter.ttf");
 }
 
 @font-face {
     font-family: Poppins;
     font-weight: 400;
-    src: url("/fonts/Poppins-Regular.ttf");
+    src: url("/divesea/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
     font-family: Poppins;
     font-weight: 500;
-    src: url("/fonts/Poppins-Medium.ttf");
+    src: url("/divesea/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
     font-family: Poppins;
     font-weight: 600;
-    src: url("/fonts/Poppins-SemiBold.ttf");
+    src: url("/divesea/fonts/Poppins-SemiBold.ttf");
 }
 
 @font-face {
     font-family: Poppins;
     font-weight: 700;
-    src: url("/fonts/Poppins-Bold.ttf");
+    src: url("/divesea/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
     font-family: PublicSans;
-    src: url("/fonts/PublicSans.ttf");
+    src: url("/divesea/fonts/PublicSans.ttf");
 }
 
 @font-face {
     font-family: DMSans;
-    src: url("/fonts/DMSans.ttf");
+    src: url("/divesea/fonts/DMSans.ttf");
 }
 
 @font-face {
     font-family: Outfit;
-    src: url("/fonts/Outfit.ttf");
+    src: url("/divesea/fonts/Outfit.ttf");
 }
 
 body {

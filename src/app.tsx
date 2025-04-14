@@ -11,6 +11,7 @@ import "swiper/css";
 export default function App() {
   return (
     <Router
+      base="divesea/"
       root={(props) => (
         <MetaProvider>
           <Title>SolidStart - Basic</Title>
