@@ -6,6 +6,10 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   server: {
+    baseURL: "/divesea",
     preset: "githubPages",
+    prerender: {
+      crawlLinks: true,
+    },
   },
 });
