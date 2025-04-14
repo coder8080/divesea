@@ -17,7 +17,7 @@ const GridRow = (props: Props) => {
         <div
           class="rounded-full border-[4px] border-white w-[46px] lg:w-[84px] aspect-square"
           style={{
-            "background-image": `url("/images/${props.img}")`,
+            "background-image": `url("${props.img}")`,
             "background-size": "cover",
             "background-position": "center",
           }}

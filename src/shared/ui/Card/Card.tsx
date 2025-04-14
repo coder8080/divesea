@@ -26,7 +26,7 @@ const Card = (props: Props) => {
               <div
                 class=" relative aspect-square w-full rounded-3xl"
                 style={{
-                  "background-image": `url("/images/${props.img}")`,
+                  "background-image": `url("${props.img}")`,
                   "background-size": "cover",
                   "background-position": "center",
                 }}

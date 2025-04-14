@@ -10,7 +10,7 @@ const Account = (props: Props) => (
       <div
         class="relative rounded-full w-[24px] lg:w-[48px] aspect-square"
         style={{
-          "background-image": `url("/images/${props.img}")`,
+          "background-image": `url("${props.img}")`,
           "background-size": "cover",
           "background-position": "center",
         }}
