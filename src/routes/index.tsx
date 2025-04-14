@@ -144,7 +144,7 @@ export default function Home() {
         <h2 class="font-[Poppins] text-[30px] lg:text-[45px] text-[#c5c5c5] font-semibold">
           Weekly - Top NFT
         </h2>
-        <div class="swiper mt-[60px] lg:mt-[100px] max-w-full transform-none">
+        <div class="swiper mt-[60px] lg:mt-[100px] w-full transform-none">
           <div class="swiper-wrapper max-w-full transform-none">
             <For each={NFTS}>
               {(item) => (
