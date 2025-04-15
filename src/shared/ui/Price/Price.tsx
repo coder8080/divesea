@@ -1,4 +1,4 @@
-import EthIcon from "~/assets/icons/eth.svg";
+import EthIcon from "~/shared/assets/icons/eth.svg";
 
 type Props = {
   size: number;

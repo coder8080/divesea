@@ -1,4 +1,4 @@
-import SearchIcon from "~/assets/icons/search.svg";
+import SearchIcon from "~/shared/assets/icons/search.svg";
 
 const Search = () => (
   <div class="flex flex-row w-[348px] h-[57px] bg-[#ededed] rounded-2xl items-center p-[22px] gap-[22px]">

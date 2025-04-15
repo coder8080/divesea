@@ -1,7 +1,7 @@
 import RECENTS from "~/shared/data/recents";
 import NFTS from "~/shared/data/nfts";
 import Row from "./Row";
-import MenuIcon from "~/assets/icons/menu.svg";
+import MenuIcon from "~/shared/assets/icons/menu.svg";
 import { createMemo, For } from "solid-js";
 
 type Props = {

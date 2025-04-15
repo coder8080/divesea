@@ -1,4 +1,4 @@
-import WaveWhiteIcon from "~/assets/icons/wave_white.svg";
+import WaveWhiteIcon from "~/shared/assets/icons/wave_white.svg";
 import "./styles.css";
 
 const Footer = () => (

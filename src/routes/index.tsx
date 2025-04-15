@@ -12,13 +12,13 @@ import { createEffect, createMemo, For } from "solid-js";
 import GridRow from "~/shared/ui/GridRow";
 import ListItem from "~/shared/ui/ListItem";
 import Account from "~/shared/ui/Account";
-import ArrowIcon from "~/assets/icons/arrow.svg";
-import ArrowLeftIcon from "~/assets/icons/arrow-left.svg";
-import ArrowRightIcon from "~/assets/icons/arrow-right.svg";
-import LinkArrowIcon from "~/assets/icons/link-arrow.svg";
-import VerifiedIcon from "~/assets/icons/verified.svg";
-import Img1 from "~/assets/images/1.png";
-import ImgSource from "~/assets/images/img-source.png";
+import ArrowIcon from "~/shared/assets/icons/arrow.svg";
+import ArrowLeftIcon from "~/shared/assets/icons/arrow-left.svg";
+import ArrowRightIcon from "~/shared/assets/icons/arrow-right.svg";
+import LinkArrowIcon from "~/shared/assets/icons/link-arrow.svg";
+import VerifiedIcon from "~/shared/assets/icons/verified.svg";
+import Img1 from "~/shared/assets/images/1.png";
+import ImgSource from "~/shared/assets/images/img-source.png";
 
 export default function Home() {
   createEffect(() => {

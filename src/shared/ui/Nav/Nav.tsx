@@ -2,9 +2,9 @@ import Button from "~/shared/ui/Button";
 import Search from "./Search";
 import "./styles.css";
 import { createSignal } from "solid-js";
-import LogoIcon from "~/assets/icons/logo.svg";
-import WaveBlackIcon from "~/assets/icons/wave_black.svg";
-import BurgerIcon from "~/assets/icons/burger.svg";
+import LogoIcon from "~/shared/assets/icons/logo.svg";
+import WaveBlackIcon from "~/shared/assets/icons/wave_black.svg";
+import BurgerIcon from "~/shared/assets/icons/burger.svg";
 
 const Nav = () => {
   const [show, setShow] = createSignal<boolean>(false);
