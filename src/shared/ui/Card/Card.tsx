@@ -10,7 +10,9 @@ const Card = (props: Props) => {
         <img
           src={`/divesea/images/${props.img}`}
           class="object-cover w-full aspect-square rounded-3xl"
+          loading="lazy"
         />
+        <div class="swiper-lazy-preloader"></div>
         <div class="absolute top-[10px] right-[8px] lg:top-[14px] lg:right-[10px] bg-[#1C1D2059]/65 rounded-xl px-[10px] py-[6px] lg:px-[14px] lg:py-[8px] text-white text-[14px] font-[Poppins] font-medium text-nowrap">
           {props.timer}
         </div>
