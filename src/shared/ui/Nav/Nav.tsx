@@ -30,7 +30,7 @@ const Nav = () => {
             </Button>
           </div>
         </div>
-        <div class="flex flex-row xl:hidden w-full py-[20px] justify-between">
+        <div class="flex flex-row xl:hidden w-full py-[16px] justify-between">
           <div class="flex flex-row gap-[7px] items-center">
             <img src={WaveBlackIcon} />
             <span class="font-[Poppins] font-semibold text-[21.36px] text-black">
