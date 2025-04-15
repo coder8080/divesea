@@ -13,6 +13,10 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ">=22"
       - name: Check out repository code
         id: checkout
         uses: actions/checkout@v4
