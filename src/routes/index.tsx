@@ -42,7 +42,7 @@ export default function Home() {
       <PageTitle>Home</PageTitle>
       <main class="max-w-full overflow-hidden">
         <ScrollReveal />
-        <div class="mt-[20px] lg:mt-[80px] flex flex-col lg:flex-row gap-[48px] justify-center">
+        <div class="mt-[20px] lg:mt-[80px] flex flex-col lg:flex-row gap-[60px] lg:gap-[48px] justify-center">
           <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 lg:ml-25 lg:max-w-[568px] lg:w-44/100 mt-[10px]">
             <div class="bg-[#201f1f] h-[1px] w-[195px] reveal-hr invisible hidden lg:block" />
             <h1 class="font-[Poppins] font-semibold text-[47.4px]/[120%] tracking-[-1.9px] lg:text-[75px]/[120%] lg:mt-[10px] reveal-title invisible">
@@ -51,7 +51,7 @@ export default function Home() {
             <p class="mt-[10px] lg:mt-[12px] max-w-[500px] font-[Inter] font-normal text-[#676767] text-[18px] reveal-desc invisible">
               Discover, Create and Sell NFTs On Our NFT Marketplace With Over
               Thousands Of NFTs And Get a{" "}
-              <span class="font-semibold text-[#141416]">$20 bonus</span>.
+              <span class="font-semibold text-[#141416]">$20&nbsp;bonus</span>.
             </p>
             <div class="flex flex-row gap-[23px] mt-[45px] reveal-buttons invisible">
               <Button size="md" fill>
@@ -61,6 +61,10 @@ export default function Home() {
                 Create NFT
               </Button>
             </div>
+            <img
+              src="/divesea/icons/trust.svg"
+              class="mx-auto mt-[20px] lg:hidden reveal-trust invisible"
+            />
             <div class="hidden lg:flex flex-row gap-[46px] mt-[82px]">
               <Stat
                 count={430}

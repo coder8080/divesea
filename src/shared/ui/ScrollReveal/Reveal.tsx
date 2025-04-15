@@ -16,6 +16,7 @@ const ScrollRevealComponent = () => {
     reveal_glide.reveal(".reveal-title", { delay: 50 });
     reveal_glide.reveal(".reveal-desc", { delay: 200 });
     reveal_glide.reveal(".reveal-buttons", { delay: 350 });
+    reveal_glide.reveal(".reveal-trust", { delay: 400 });
     reveal_glide.reveal(".reveal-stat-1", { origin: "bottom", delay: 250 });
     reveal_glide.reveal(".reveal-stat-2", { origin: "bottom", delay: 320 });
     reveal_glide.reveal(".reveal-stat-3", { origin: "bottom", delay: 390 });
