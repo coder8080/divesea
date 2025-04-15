@@ -1,7 +1,7 @@
 import { tv } from "tailwind-variants";
 
 export const recent = tv({
-  base: "bg-white rounded-2xl flex-col gap-[12px] gap-[20px] xl:gap-[28px] w-[150px] lg:w-[365px] px-[10px] lg:px-[24px] py-[11px] lg:py-[26px]",
+  base: "bg-white rounded-2xl flex-col gap-[12px] gap-[20px] xl:gap-[28px] w-[150px] lg:w-[230px] xl:w-[365px] px-[10px] lg:px-[15px] xl:px-[24px] py-[11px] lg:py-[17px] xl:py-[26px]",
   variants: {
     onlyLarge: {
       true: "hidden lg:flex",

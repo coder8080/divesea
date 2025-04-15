@@ -193,13 +193,11 @@ export default function Home() {
         </div>
         <div class="grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] gap-[80px] lg:gap-0 px-[30] lg:px-[100px] mt-[140px] max-w-[1245px] mx-auto">
           <div class="flex flex-col items-center lg:items-start">
-            <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[45px] text-[#C5C5C5]">
-              Just Unleash -
+            <h2 class="capitalize font-[Poppins] font-semibold text-[30px] xl:text-[45px] text-[#C5C5C5]">
+              Just Unleash -<br />
+              <span class="text-[#18181B]">Your Inner Collector</span>
             </h2>
-            <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[45px] text-[#18181B]">
-              Your Inner Collector
-            </h2>
-            <div class="hidden lg:flex flex-col items-start gap-[18px] mt-[50px]">
+            <div class="hidden lg:flex flex-col items-start gap-[12px] xl:gap-[18px] mt-[30px] xl:mt-[50px]">
               <ListItem>Best Seller All Around World</ListItem>
               <ListItem>$2M+ Transections Every Day</ListItem>
               <ListItem>Secure Transactions</ListItem>
@@ -208,20 +206,20 @@ export default function Home() {
               <ListItem>Join Our Community</ListItem>
             </div>
           </div>
-          <div class="relative mx-auto bg-white rounded-3xl flex flex-col gap-[24px] px-[10px] lg:px-[22px] py-[12px] lg:py-[26px] w-[150px] lg:w-[320px]">
-            <h3 class="capitalize font-[Poppins] font-semibold text-[8px] lg:text-[16px] text-[#1A202C]">
+          <div class="relative mx-auto bg-white rounded-3xl flex flex-col gap-[16px] xl:gap-[24px] px-[10px] lg:px-[22px] py-[12px] lg:py-[26px] w-[150px] lg:w-[230px] xl:w-[320px]">
+            <h3 class="capitalize font-[Poppins] font-semibold text-[8px] lg:text-[14px] xl:text-[16px] text-[#1A202C]">
               Best Sellers
             </h3>
-            <div class="flex flex-col gap-[8px] lg:gap-[18px]">
+            <div class="flex flex-col gap-[8px] lg:gap-[10px] xl:gap-[18px]">
               <For each={accounts()}>
                 {(item, index) => <Account {...item} index={index()} />}
               </For>
             </div>
             <Recent position="left" />
-            <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[325px] p-[6px] lg:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
-              <div class="rounded-full w-[3.63px] lg:w-[7.6px] aspect-square bg-[#141416] self-center" />
+            <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[230px] xl:w-[325px] p-[6px] lg:p-[8px] xl:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[8px] xl:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
+              <div class="rounded-full w-[4px] lg:w-[5px] xl:w-[8px] aspect-square bg-[#141416] self-center" />
               <div
-                class="rounded-full w-[20px] lg:w-[40px] aspect-square relative"
+                class="rounded-full w-[20px] lg:w-[30px] xl:w-[40px] aspect-square relative"
                 style={{
                   "background-image": `url("/divesea/images/1.png")`,
                   "background-size": "cover",
@@ -230,25 +228,25 @@ export default function Home() {
               >
                 <img
                   src="/divesea/icons/verified.svg"
-                  class="aspect-square w-[8px] lg:w-[17px] absolute top-0 right-0 translate-x-1/4"
+                  class="aspect-square w-[8px] lg:w-[12px] xl:w-[17px] absolute top-0 right-0 translate-x-1/4"
                 />
               </div>
               <div class="flex flex-col">
-                <div class="flex flex-row gap-[3px] lg:gap-[5.7px]">
-                  <span class="font-[Poppins] font-medium text-[6px] lg:text-[13.29px] text-[#949494] block">
+                <div class="flex flex-row gap-[3px] lg:gap-[4px] xl:gap-[5.7px]">
+                  <span class="font-[Poppins] font-medium text-[6px] lg:text-[10px] xl:text-[13.29px] text-[#949494] block">
                     New bid
                   </span>
-                  <span class="font-[Poppins] font-medium text-[6px] lg:text-[13.29px] text-[#141416] block">
+                  <span class="font-[Poppins] font-medium text-[6px] lg:text-[10px] xl:text-[13.29px] text-[#141416] block">
                     Rotation
                   </span>
                 </div>
-                <span class="block font-[Poppins] font-semibold text-[6px] lg:text-[11.39px] text-[#141416]">
+                <span class="block font-[Poppins] font-semibold text-[6px] lg:text-[8px] xl:text-[12px] text-[#141416]">
                   0.002 ETH
                 </span>
               </div>
               <div />
               <div
-                class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[60px] aspect-square"
+                class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[43px] xl:w-[60px] aspect-square"
                 style={{
                   "background-image": `url("/divesea/images/1.png")`,
                   "background-position": "center",
@@ -256,7 +254,7 @@ export default function Home() {
                 }}
               ></div>
               <div class="col-span-2" />
-              <div class="font-[Poppins] font-semibold text-[6px] lg:text-[12px] text-[#949494]">
+              <div class="font-[Poppins] font-semibold text-[6px] lg:text-[8px] xl:text-[12px] text-[#949494]">
                 6 Oct 2022, 11:44 PM
               </div>
             </div>
