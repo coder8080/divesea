@@ -1,3 +1,3 @@
-import PriceDelta from "./PriceDelta";
+import PriceDelta from "./PriceDelta"
 
-export default PriceDelta;
+export default PriceDelta

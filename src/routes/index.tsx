@@ -1,18 +1,18 @@
-import Button from "~/shared/ui/Button";
-import Stat from "~/shared/ui/Stat";
-import Card from "~/shared/ui/Card";
-import NFTS from "~/shared/data/nfts";
-import Atropos from "atropos";
-import Swiper from "swiper";
-import ScrollReveal from "~/shared/ui/ScrollReveal";
-import Recent from "~/shared/ui/Recent";
-import GridTitle from "~/shared/ui/GridTitle";
-import { Navigation } from "swiper/modules";
-import { createEffect, createMemo, For } from "solid-js";
-import GridRow from "~/shared/ui/GridRow";
-import ListItem from "~/shared/ui/ListItem";
-import Account from "~/shared/ui/Account";
-import PageTitle from "~/shared/ui/PageTitle";
+import Button from "~/shared/ui/Button"
+import Stat from "~/shared/ui/Stat"
+import Card from "~/shared/ui/Card"
+import NFTS from "~/shared/data/nfts"
+import Atropos from "atropos"
+import Swiper from "swiper"
+import ScrollReveal from "~/shared/ui/ScrollReveal"
+import Recent from "~/shared/ui/Recent"
+import GridTitle from "~/shared/ui/GridTitle"
+import { Navigation } from "swiper/modules"
+import { createEffect, createMemo, For } from "solid-js"
+import GridRow from "~/shared/ui/GridRow"
+import ListItem from "~/shared/ui/ListItem"
+import Account from "~/shared/ui/Account"
+import PageTitle from "~/shared/ui/PageTitle"
 
 export default function Home() {
   createEffect(() => {
@@ -20,7 +20,7 @@ export default function Home() {
       el: ".atropos-img1",
       shadow: false,
       rotateTouch: "scroll-y",
-    });
+    })
 
     new Swiper(".swiper", {
       modules: [Navigation],
@@ -31,11 +31,11 @@ export default function Home() {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-    });
-  });
+    })
+  })
 
-  const gridRows = createMemo(() => NFTS.slice(0, 4));
-  const accounts = createMemo(() => NFTS.slice(0, 6));
+  const gridRows = createMemo(() => NFTS.slice(0, 4))
+  const accounts = createMemo(() => NFTS.slice(0, 6))
 
   return (
     <>
@@ -49,8 +49,7 @@ export default function Home() {
               Discover And Create NFTs
             </h1>
             <p class="mt-[10px] lg:mt-[12px] max-w-[500px] font-[Inter] font-normal text-[#676767] text-[12px] xl:text-[18px] reveal-desc invisible">
-              Discover, Create and Sell NFTs On Our NFT Marketplace With Over
-              Thousands Of NFTs And Get a{" "}
+              Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a{" "}
               <span class="font-semibold text-[#141416]">$20&nbsp;bonus</span>.
             </p>
             <div class="flex flex-row gap-[23px] mt-[40px] lg:mt-[30px] xl:mt-[45px] reveal-buttons invisible">
@@ -61,26 +60,11 @@ export default function Home() {
                 Create NFT
               </Button>
             </div>
-            <img
-              src="/divesea/icons/trust.svg"
-              class="mx-auto mt-[20px] lg:hidden reveal-trust invisible"
-            />
+            <img src="/divesea/icons/trust.svg" class="mx-auto mt-[20px] lg:hidden reveal-trust invisible" />
             <div class="hidden lg:flex flex-row gap-[46px] mt-[60px] lg:mt-[82px]">
-              <Stat
-                count={430}
-                caption="Art Works"
-                class="reveal-stat-1 invisible"
-              />
-              <Stat
-                count={159}
-                caption="Creators"
-                class="reveal-stat-2 invisible"
-              />
-              <Stat
-                count={87}
-                caption="Collections"
-                class="reveal-stat-3 invisible"
-              />
+              <Stat count={430} caption="Art Works" class="reveal-stat-1 invisible" />
+              <Stat count={159} caption="Creators" class="reveal-stat-2 invisible" />
+              <Stat count={87} caption="Collections" class="reveal-stat-3 invisible" />
             </div>
           </div>
           <div class="w-full pl-[30px] lg:pl-0 lg:max-w-[758px] lg:w-62/100 xl:w-56/100 flex self-start">
@@ -157,16 +141,10 @@ export default function Home() {
             </div>
             <div class="flex flex-row bg-white w-[102px] h-[42px] xl:h-[68px] xl:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
               <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
-                <img
-                  src="/divesea/icons/arrow-left.svg"
-                  class="w-[16px] xl:w-[26px] aspect-square"
-                />
+                <img src="/divesea/icons/arrow-left.svg" class="w-[16px] xl:w-[26px] aspect-square" />
               </button>
               <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
-                <img
-                  src="/divesea/icons/arrow-right.svg"
-                  class="w-[16px] xl:w-[26px] aspect-square"
-                />
+                <img src="/divesea/icons/arrow-right.svg" class="w-[16px] xl:w-[26px] aspect-square" />
               </button>
               <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] xl:h-[26px] rounded-full" />
             </div>
@@ -211,9 +189,7 @@ export default function Home() {
               Best Sellers
             </h3>
             <div class="flex flex-col gap-[8px] lg:gap-[10px] xl:gap-[18px]">
-              <For each={accounts()}>
-                {(item, index) => <Account {...item} index={index()} />}
-              </For>
+              <For each={accounts()}>{(item, index) => <Account {...item} index={index()} />}</For>
             </div>
             <Recent position="left" />
             <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[230px] xl:w-[325px] p-[6px] lg:p-[8px] xl:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[8px] xl:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
@@ -299,5 +275,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  );
+  )
 }

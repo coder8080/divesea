@@ -1,3 +1,3 @@
-import Recent from "./Recent";
+import Recent from "./Recent"
 
-export default Recent;
+export default Recent

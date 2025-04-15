@@ -1,4 +1,4 @@
-import { tv } from "tailwind-variants";
+import { tv } from "tailwind-variants"
 
 export const gridTitle = tv({
   base: "capitalize font-[Poppins] font-medium text-[14px] lg:text-[16px] xl:text-[22px] text-[#93989A] mb-[48px]",
@@ -13,4 +13,4 @@ export const gridTitle = tv({
       true: "self-end text-end lg:self-center lg:text-center",
     },
   },
-});
+})

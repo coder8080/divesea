@@ -1,16 +1,11 @@
-import "./styles.css";
+import "./styles.css"
 
 const Footer = () => (
   <div class="footer-container">
     <div class="footer">
       <div class="grow flex flex-row items-center gap-[10px]">
-        <img
-          src="/divesea/icons/wave_white.svg"
-          class="aspect-square w-[44px] lg:w-[46px] xl:w-[65px]"
-        />
-        <span class="font-[Poppins] font-semibold text-[20px] lg:text-[22px] xl:text-[30px] text-white">
-          DiveSea
-        </span>
+        <img src="/divesea/icons/wave_white.svg" class="aspect-square w-[44px] lg:w-[46px] xl:w-[65px]" />
+        <span class="font-[Poppins] font-semibold text-[20px] lg:text-[22px] xl:text-[30px] text-white">DiveSea</span>
       </div>
       <span class="footer-link" id="footer-privacy">
         Privacy Policy
@@ -24,10 +19,7 @@ const Footer = () => (
       <span class="footer-link" id="footer-contact">
         Contact
       </span>
-      <div
-        class="mt-[30px] lg:mt-[25px] mb-[26px] lg:mb-[56px] w-full bg-[#818181] h-[1px]"
-        id="footer-line"
-      />
+      <div class="mt-[30px] lg:mt-[25px] mb-[26px] lg:mb-[56px] w-full bg-[#818181] h-[1px]" id="footer-line" />
       <p
         class="text-center lg:text-start grow font-[Inter] font-medium text-[14px] lg:text-[12px] xl:text-[17px] text-[#999999]"
         id="footer-copyright"
@@ -43,10 +35,7 @@ const Footer = () => (
         </a>{" "}
         All Rights Reserved.
       </p>
-      <div
-        class="flex flex-row gap-[20px] lg:gap-[40px] xl:gap-[54px] justify-end"
-        id="footer-social"
-      >
+      <div class="flex flex-row gap-[20px] lg:gap-[40px] xl:gap-[54px] justify-end" id="footer-social">
         <svg
           width="22"
           height="22"
@@ -123,6 +112,6 @@ const Footer = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default Footer;
+export default Footer

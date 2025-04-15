@@ -1,5 +1,5 @@
-import { defineConfig } from "@solidjs/start/config";
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "@solidjs/start/config"
+import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
   vite: {
@@ -10,4 +10,4 @@ export default defineConfig({
     baseURL: "/divesea/",
     preset: "static",
   },
-});
+})

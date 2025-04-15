@@ -1,3 +1,3 @@
-import GridRow from "./GridRow";
+import GridRow from "./GridRow"
 
-export default GridRow;
+export default GridRow

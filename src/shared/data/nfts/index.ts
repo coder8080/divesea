@@ -1,14 +1,14 @@
 type Nft = {
-  id: string;
-  title: string;
-  timer: string;
-  bid: number;
-  img: string;
-  delta: number;
-  owners: number;
-  volume: number;
-  items: number;
-};
+  id: string
+  title: string
+  timer: string
+  bid: number
+  img: string
+  delta: number
+  owners: number
+  volume: number
+  items: number
+}
 
 const NFTS: Nft[] = [
   {
@@ -253,6 +253,6 @@ const NFTS: Nft[] = [
     volume: 8.104,
     img: "22.jpg",
   },
-];
+]
 
-export default NFTS;
+export default NFTS

@@ -6,6 +6,6 @@ const Search = () => (
       class="placeholder:text-[#c2c3cb] outline-none font-[Poppins] font-medium grow"
     />
   </div>
-);
+)
 
-export default Search;
+export default Search

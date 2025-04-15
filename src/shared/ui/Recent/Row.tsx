@@ -1,13 +1,13 @@
-import PriceDelta from "../PriceDelta";
-import Price from "~/shared/ui/Price";
+import PriceDelta from "../PriceDelta"
+import Price from "~/shared/ui/Price"
 
 export type Props = {
-  title: string;
-  bid: number;
-  img: string;
-  delta: number;
-  index: number;
-};
+  title: string
+  bid: number
+  img: string
+  delta: number
+  index: number
+}
 
 const Row = (props: Props) => {
   return (
@@ -30,9 +30,7 @@ const Row = (props: Props) => {
           <h4 class="font-[Poppins] font-medium text-[6px] lg:text-[10px] xl:text-[16px] text-[#141416]">
             {props.title}
           </h4>
-          <p class="font-[Poppins] font-normal text-[5px] lg:text-[8px] xl:text-[12px] text-[#64748b]">
-            {props.title}
-          </p>
+          <p class="font-[Poppins] font-normal text-[5px] lg:text-[8px] xl:text-[12px] text-[#64748b]">{props.title}</p>
         </div>
       </div>
       <div class="flex flex-col gap-[4px] lg:gap-[8px] items-end">
@@ -40,7 +38,7 @@ const Row = (props: Props) => {
         <PriceDelta size="sm" weight="normal" delta={props.delta} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Row;
+export default Row

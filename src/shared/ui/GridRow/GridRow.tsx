@@ -1,14 +1,14 @@
-import PriceDelta from "../PriceDelta";
-import Price from "../Price";
+import PriceDelta from "../PriceDelta"
+import Price from "../Price"
 
 type Props = {
-  img: string;
-  title: string;
-  bid: number;
-  delta: number;
-  owners: number;
-  items: number;
-};
+  img: string
+  title: string
+  bid: number
+  delta: number
+  owners: number
+  items: number
+}
 
 const GridRow = (props: Props) => {
   return (
@@ -46,7 +46,7 @@ const GridRow = (props: Props) => {
       </span>
       <div class="bg-[#EBE9E9] h-[2px] col-span-2 lg:col-span-6 mb-[40px] mt-[26px]" />
     </>
-  );
-};
+  )
+}
 
-export default GridRow;
+export default GridRow

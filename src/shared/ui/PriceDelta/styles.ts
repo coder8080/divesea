@@ -1,4 +1,4 @@
-import { tv } from "tailwind-variants";
+import { tv } from "tailwind-variants"
 
 export const priceDelta = tv({
   base: "font-[Poppins]",
@@ -19,4 +19,4 @@ export const priceDelta = tv({
       medium: "font-medium",
     },
   },
-});
+})

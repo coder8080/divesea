@@ -1,7 +1,7 @@
-import Button from "~/shared/ui/Button";
-import Price from "~/shared/ui/Price";
+import Button from "~/shared/ui/Button"
+import Price from "~/shared/ui/Price"
 
-export type Props = { title: string; timer: string; bid: number; img: string };
+export type Props = { title: string; timer: string; bid: number; img: string }
 
 const Card = (props: Props) => {
   return (
@@ -34,6 +34,6 @@ const Card = (props: Props) => {
         </div>
       </div>
     </div>
-  );
-};
-export default Card;
+  )
+}
+export default Card

@@ -1,11 +1,11 @@
-import Button from "~/shared/ui/Button";
-import Search from "./Search";
-import "./styles.css";
-import { createSignal } from "solid-js";
+import Button from "~/shared/ui/Button"
+import Search from "./Search"
+import "./styles.css"
+import { createSignal } from "solid-js"
 
 const Nav = () => {
-  const [show, setShow] = createSignal<boolean>(false);
-  const toggle = () => setShow(!show());
+  const [show, setShow] = createSignal<boolean>(false)
+  const toggle = () => setShow(!show())
 
   return (
     <>
@@ -30,9 +30,7 @@ const Nav = () => {
         <div class="flex flex-row xl:hidden w-full py-[16px] justify-between">
           <div class="flex flex-row gap-[7px] items-center">
             <img src="/divesea/icons/wave_black.svg" />
-            <span class="font-[Poppins] font-semibold text-[21.36px] text-black">
-              DiveSea
-            </span>
+            <span class="font-[Poppins] font-semibold text-[21.36px] text-black">DiveSea</span>
           </div>
           <button onClick={toggle}>
             <img src="/divesea/icons/burger.svg" />
@@ -46,21 +44,13 @@ const Nav = () => {
         }}
         onClick={toggle}
       >
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">
-          Discover
-        </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">
-          Creators
-        </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">
-          Sell
-        </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">
-          Stats
-        </a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Discover</a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Creators</a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Sell</a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Stats</a>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

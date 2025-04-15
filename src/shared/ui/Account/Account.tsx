@@ -1,8 +1,8 @@
 type Props = {
-  img: string;
-  title: string;
-  index: number;
-};
+  img: string
+  title: string
+  index: number
+}
 
 const Account = (props: Props) => (
   <div class="flex flex-row justify-between items-center">
@@ -32,6 +32,6 @@ const Account = (props: Props) => (
       Follow
     </button>
   </div>
-);
+)
 
-export default Account;
+export default Account

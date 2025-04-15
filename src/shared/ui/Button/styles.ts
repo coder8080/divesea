@@ -1,4 +1,4 @@
-import { tv } from "tailwind-variants";
+import { tv } from "tailwind-variants"
 
 export const button = tv({
   base: "rounded-xl lg:rounded-2-xl whitespace-nowrap font-semibold cursor-pointer hover:scale-102 transition active:scale-98",
@@ -35,4 +35,4 @@ export const button = tv({
       class: "bg-[#141416] hover:bg-[#333] text-white border border-white",
     },
   ],
-});
+})

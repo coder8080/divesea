@@ -1,4 +1,4 @@
-import { tv } from "tailwind-variants";
+import { tv } from "tailwind-variants"
 
 export const container = tv({
   base: "flex-row items-center gap-[2px] justify-center",
@@ -8,7 +8,7 @@ export const container = tv({
       false: "flex",
     },
   },
-});
+})
 
 export const eth = tv({
   variants: {
@@ -18,7 +18,7 @@ export const eth = tv({
       lg: "h-[20px] lg:h-[23px] xl:h-[30px]",
     },
   },
-});
+})
 
 export const text = tv({
   base: "font-[Poppins] text-[#141416]",
@@ -33,4 +33,4 @@ export const text = tv({
       semibold: "font-semibold",
     },
   },
-});
+})

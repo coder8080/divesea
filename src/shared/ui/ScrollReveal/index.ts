@@ -1,5 +1,5 @@
-import { clientOnly } from "@solidjs/start";
+import { clientOnly } from "@solidjs/start"
 
-const ScrollReveal = clientOnly(() => import("./Reveal"));
+const ScrollReveal = clientOnly(() => import("./Reveal"))
 
-export default ScrollReveal;
+export default ScrollReveal

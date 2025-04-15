@@ -1,49 +1,49 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: Inter;
-    src: url("/divesea/fonts/Inter.ttf");
+  font-family: Inter;
+  src: url("/divesea/fonts/Inter.ttf");
 }
 
 @font-face {
-    font-family: Poppins;
-    font-weight: 400;
-    src: url("/divesea/fonts/Poppins-Regular.ttf");
+  font-family: Poppins;
+  font-weight: 400;
+  src: url("/divesea/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-    font-family: Poppins;
-    font-weight: 500;
-    src: url("/divesea/fonts/Poppins-Medium.ttf");
+  font-family: Poppins;
+  font-weight: 500;
+  src: url("/divesea/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
-    font-family: Poppins;
-    font-weight: 600;
-    src: url("/divesea/fonts/Poppins-SemiBold.ttf");
+  font-family: Poppins;
+  font-weight: 600;
+  src: url("/divesea/fonts/Poppins-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: Poppins;
-    font-weight: 700;
-    src: url("/divesea/fonts/Poppins-Bold.ttf");
+  font-family: Poppins;
+  font-weight: 700;
+  src: url("/divesea/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
-    font-family: PublicSans;
-    src: url("/divesea/fonts/PublicSans.ttf");
+  font-family: PublicSans;
+  src: url("/divesea/fonts/PublicSans.ttf");
 }
 
 @font-face {
-    font-family: DMSans;
-    src: url("/divesea/fonts/DMSans.ttf");
+  font-family: DMSans;
+  src: url("/divesea/fonts/DMSans.ttf");
 }
 
 @font-face {
-    font-family: Outfit;
-    src: url("/divesea/fonts/Outfit.ttf");
+  font-family: Outfit;
+  src: url("/divesea/fonts/Outfit.ttf");
 }
 
 body {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }

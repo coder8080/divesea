@@ -1,11 +1,11 @@
-import { ParentProps } from "solid-js";
-import { gridTitle } from "./styles";
+import { ParentProps } from "solid-js"
+import { gridTitle } from "./styles"
 
 type Props = {
-  onlyLarge?: boolean;
-  textStart?: boolean;
-  mobileTextEnd?: boolean;
-} & ParentProps;
+  onlyLarge?: boolean
+  textStart?: boolean
+  mobileTextEnd?: boolean
+} & ParentProps
 
 const GridTitle = (props: Props) => (
   <div
@@ -17,6 +17,6 @@ const GridTitle = (props: Props) => (
   >
     {props.children}
   </div>
-);
+)
 
-export default GridTitle;
+export default GridTitle
