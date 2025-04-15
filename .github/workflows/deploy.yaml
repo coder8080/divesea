@@ -2,6 +2,8 @@ name: 🚀 Deploy Github Pages
 
 run-name: Deploy ${{ github.sha }} to Github Pages
 
+concurrency: github-pages
+
 on:
   workflow_run:
     workflows: [🧪 Typecheck]
