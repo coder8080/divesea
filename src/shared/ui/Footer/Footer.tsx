@@ -3,12 +3,12 @@ import "./styles.css";
 const Footer = () => (
   <div class="footer-container">
     <div class="footer">
-      <div class="grow flex flex-row items-center gap-[9.88px]">
+      <div class="grow flex flex-row items-center gap-[10px]">
         <img
           src="/divesea/icons/wave_white.svg"
-          class="aspect-square w-[44px] lg:w-[65px]"
+          class="aspect-square w-[44px] lg:w-[46px] xl:w-[65px]"
         />
-        <span class="font-[Poppins] font-semibold text-[20px] lg:text-[29.92px] text-white">
+        <span class="font-[Poppins] font-semibold text-[20px] lg:text-[22px] xl:text-[30px] text-white">
           DiveSea
         </span>
       </div>
@@ -25,17 +25,26 @@ const Footer = () => (
         Contact
       </span>
       <div
-        class="mt-[30px] lg:mt-[25px] mb-[26px] lg:mb-[56px] w-full border-[1px] border-[#818181]"
+        class="mt-[30px] lg:mt-[25px] mb-[26px] lg:mb-[56px] w-full bg-[#818181] h-[1px]"
         id="footer-line"
       />
       <p
-        class="text-center lg:text-start grow font-[Inter] font-medium text-[14px] lg:text-[17px] text-[#999999]"
+        class="text-center lg:text-start grow font-[Inter] font-medium text-[14px] lg:text-[12px] xl:text-[17px] text-[#999999]"
         id="footer-copyright"
       >
-        © 2023 EATLY All Rights Reserved.
+        © 2025{" "}
+        <a
+          href="https://github.com/coder8080"
+          class="transition hover:text-white"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          coder8080
+        </a>{" "}
+        All Rights Reserved.
       </p>
       <div
-        class="flex flex-row gap-[20px] lg:gap-[54px] justify-end"
+        class="flex flex-row gap-[20px] lg:gap-[40px] xl:gap-[54px] justify-end"
         id="footer-social"
       >
         <svg

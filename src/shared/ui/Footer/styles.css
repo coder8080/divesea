@@ -32,6 +32,18 @@
     padding-left: 70px;
 }
 
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .footer {
+        margin-top: 110px;
+        padding: 60px 70px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        padding-left: 50px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .footer {
         grid-template-columns: 1fr auto;
