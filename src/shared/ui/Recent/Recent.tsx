@@ -2,9 +2,11 @@ import RECENTS from "~/shared/data/recents";
 import NFTS from "~/shared/data/nfts";
 import Row from "./Row";
 import { createMemo, For } from "solid-js";
+import { recent } from "./styles";
 
 type Props = {
-  class?: string;
+  onlyLarge?: boolean;
+  position: "left" | "right";
 };
 
 const Recent = (props: Props) => {
@@ -14,7 +16,7 @@ const Recent = (props: Props) => {
 
   return (
     <div
-      class={`bg-white rounded-2xl flex-col gap-[12px] lg:gap-[28px] w-[150px] lg:w-[365px] px-[10px] lg:px-[24px] py-[11px] lg:py-[26px] ${props.class || ""}`}
+      class={recent({ onlyLarge: props.onlyLarge, position: props.position })}
     >
       <div class="flex flex-row justify-between">
         <p class="font-[Poppins] font-semibold text-[8px] lg:text-[22px] text-[#1a202c] capitalize">

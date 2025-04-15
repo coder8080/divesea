@@ -22,11 +22,11 @@ const Card = (props: Props) => {
           {props.title}
         </h3>
         <div class="flex flex-row justify-between">
-          <div class="flex flex-col gap-[4px]">
+          <div class="flex flex-col items-start gap-[4px]">
             <span class="font-[Poppins] font-normal text-[10px] lg:text-[14px] text-nowrap text-[#94a3b8]">
               Current bid
             </span>
-            <Price size={12} sizeLg={16} weight={400} price={props.bid} />
+            <Price size="md" weight="medium" price={props.bid} />
           </div>
           <Button size="sm" fill>
             Place Bid

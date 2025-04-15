@@ -1,11 +1,10 @@
 import { createMemo } from "solid-js";
+import { priceDelta } from "./styles";
 
 type Props = {
   delta: number;
-  size: number;
-  sizeLg: number;
-  weight: number;
-  class?: string;
+  size: "sm" | "lg";
+  weight: "normal" | "medium";
   onlyLarge?: boolean;
 };
 
@@ -16,16 +15,16 @@ const PriceDelta = (props: Props) => {
     profit() ? `+${props.delta}` : props.delta.toString(),
   );
   return (
-    <span
-      class={`${props.onlyLarge ? "hidden lg:block " : ""}${props.class ? props.class + " " : ""}font-[${props.weight}] font-[Poppins] lg:text-[${props.sizeLg}px] text-[${props.size}px]`}
-      // class="text-7px"
-      classList={{
-        "text-[#10c352]": profit(),
-        "text-[#e23333]": !profit(),
-      }}
+    <div
+      class={priceDelta({
+        onlyLarge: props.onlyLarge,
+        size: props.size,
+        weight: props.weight,
+        profit: profit(),
+      })}
     >
       {stringDelta()}
-    </span>
+    </div>
   );
 };
 

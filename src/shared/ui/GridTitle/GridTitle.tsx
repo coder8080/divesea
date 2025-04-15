@@ -1,13 +1,19 @@
 import { ParentProps } from "solid-js";
+import { gridTitle } from "./styles";
 
 type Props = {
   onlyLarge?: boolean;
-  class?: string;
+  textStart?: boolean;
+  mobileTextEnd?: boolean;
 } & ParentProps;
 
 const GridTitle = (props: Props) => (
   <div
-    class={`${props.class ? props.class + " " : ""}capitalize font-[Poppins] font-medium text-[14px] lg:text-[22px] text-[#93989A] mb-[48px] ${props.onlyLarge ? "hidden lg:block" : ""}`}
+    class={gridTitle({
+      onlyLarge: props.onlyLarge,
+      textStart: props.textStart,
+      mobileTextEnd: props.mobileTextEnd,
+    })}
   >
     {props.children}
   </div>

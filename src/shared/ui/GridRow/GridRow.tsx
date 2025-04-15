@@ -32,33 +32,12 @@ const GridRow = (props: Props) => {
         </div>
       </div>
       <div class="flex flex-col lg:hidden items-end">
-        <Price size={16} sizeLg={24} weight={600} price={props.bid} />
-        <PriceDelta size={14} sizeLg={24} weight={500} delta={props.delta} />
+        <Price size="lg" weight="semibold" price={props.bid} />
+        <PriceDelta size="lg" weight="medium" delta={props.delta} />
       </div>
-      <Price
-        size={16}
-        sizeLg={24}
-        weight={600}
-        price={props.bid}
-        class="self-center"
-        onlyLarge
-      />
-      <PriceDelta
-        size={14}
-        sizeLg={24}
-        weight={500}
-        delta={props.delta}
-        class="self-center"
-        onlyLarge
-      />
-      <Price
-        size={16}
-        sizeLg={24}
-        weight={600}
-        price={props.bid}
-        class="self-center"
-        onlyLarge
-      />
+      <Price size="lg" weight="semibold" price={props.bid} onlyLarge />
+      <PriceDelta size="lg" weight="medium" delta={props.delta} onlyLarge />
+      <Price size="lg" weight="semibold" price={props.bid} onlyLarge />
       <span class="font-[Poppins] font-medium text-[24px] text-[#010101] self-center hidden lg:block">
         {props.owners}K
       </span>

@@ -57,7 +57,7 @@ export default function Home() {
               <Button size="md" fill>
                 Explore More
               </Button>
-              <Button size="md" border>
+              <Button size="md" white>
                 Create NFT
               </Button>
             </div>
@@ -171,15 +171,15 @@ export default function Home() {
               <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] lg:h-[26px] rounded-full" />
             </div>
           </div>
-          <Recent class="absolute right-[80px] bottom-0 translate-y-1/2 hidden lg:flex" />
+          <Recent onlyLarge position="right" />
         </div>
         <div class="mt-[78px] lg:mt-[240px] flex flex-col items-center px-[30px] lg:px-[100px] max-w-[1440px] mx-auto">
           <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[44px] text-[#141416]">
             Top Collection
           </h2>
-          <div class="grid grid-cols-[1fr_auto] grid-rows-6 lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full lg:gap-x-[80px] mt-[40px] lg:mt-[90px]">
-            <GridTitle>Collection</GridTitle>
-            <GridTitle class="text-end">Volume</GridTitle>
+          <div class="grid grid-cols-[1fr_auto] grid-rows-6 lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full lg:gap-x-[80px] mt-[40px] lg:mt-[90px] justify-center text-center items-center">
+            <GridTitle textStart>Collection</GridTitle>
+            <GridTitle mobileTextEnd>Volume</GridTitle>
             <GridTitle onlyLarge>24h %</GridTitle>
             <GridTitle onlyLarge>Floor Price</GridTitle>
             <GridTitle onlyLarge>Owners</GridTitle>
@@ -217,7 +217,7 @@ export default function Home() {
                 {(item, index) => <Account {...item} index={index()} />}
               </For>
             </div>
-            <Recent class="flex absolute left-0 bottom-0 translate-y-1/3 -translate-x-1/2 shadow-xl border border-[#EDF2F7]" />
+            <Recent position="left" />
             <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[325px] p-[6px] lg:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
               <div class="rounded-full w-[3.63px] lg:w-[7.6px] aspect-square bg-[#141416] self-center" />
               <div
@@ -272,12 +272,10 @@ export default function Home() {
                 World’s Largest NFT Place
               </p>
               <div class="flex flex-row justify-center lg:justify-start gap-[15px] lg:gap-[30.51px] mt-[25px] lg:mt-auto">
-                <Button size="xl" white>
+                <Button size="xl" white fill>
                   Explore More
                 </Button>
-                <Button size="xl2" fill border>
-                  Sell Artwork
-                </Button>
+                <Button size="xl2">Sell Artwork</Button>
               </div>
             </div>
             <div class="relative w-full lg:w-[369px] aspect-369/249">

@@ -36,8 +36,8 @@ const Row = (props: Props) => {
         </div>
       </div>
       <div class="flex flex-col gap-[4px] lg:gap-[8px] items-end">
-        <Price size={6} sizeLg={16} weight={600} price={props.bid} />
-        <PriceDelta size={5} sizeLg={14} weight={400} delta={props.delta} />
+        <Price size="sm" weight="semibold" price={props.bid} />
+        <PriceDelta size="sm" weight="normal" delta={props.delta} />
       </div>
     </div>
   );
