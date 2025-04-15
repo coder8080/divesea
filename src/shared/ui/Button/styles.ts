@@ -4,8 +4,8 @@ export const button = tv({
   base: "rounded-xl lg:rounded-2-xl whitespace-nowrap font-semibold cursor-pointer hover:scale-102 transition active:scale-98",
   variants: {
     size: {
-      sm: "uppercase font-[Poppins] text-[10px] px-[18px] py-[10px] lg:text-[14px] lg:px-[26px] lg:py-[16px]",
-      md: "uppercase font-[Poppins] text-[12px] px-[21px] py-[15px] lg:text-[16px] lg:px-[30px] lg:py-[18px]",
+      sm: "uppercase font-[Poppins] text-[10px] px-[18px] py-[10px] xl:text-[14px] xl:px-[26px] xl:py-[16px]",
+      md: "uppercase font-[Poppins] text-[12px] px-[21px] py-[15px] xl:text-[16px] xl:px-[30px] xl:py-[18px]",
       lg: "uppercase font-[Poppins] lg:text-[17px] lg:px-[24px] lg:py-[16px]",
       xl: "capitalize font-[Outfit] text-[11px] px-[12px] py-[10px] lg:text-[21.36px] lg:px-[25.53px] lg:py-[19.83px]",
       xl2: "capitalize font-[Outfit] text-[11px] px-[14px] py-[10px] lg:text-[21.36px] lg:px-[30.53px] lg:py-[19.83px]",

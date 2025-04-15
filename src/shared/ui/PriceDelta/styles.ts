@@ -7,7 +7,7 @@ export const priceDelta = tv({
       true: "hidden lg:block",
     },
     size: {
-      sm: "text-[6px] xl:text-[14px]",
+      sm: "text-[6px] lg:text-[10px] xl:text-[14px]",
       lg: "text-[14px] xl:text-[24px]",
     },
     profit: {

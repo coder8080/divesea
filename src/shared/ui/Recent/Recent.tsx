@@ -19,7 +19,7 @@ const Recent = (props: Props) => {
       class={recent({ onlyLarge: props.onlyLarge, position: props.position })}
     >
       <div class="flex flex-row justify-between">
-        <p class="font-[Poppins] font-semibold text-[8px] lg:text-[22px] text-[#1a202c] capitalize">
+        <p class="font-[Poppins] font-semibold text-[8px] lg:text-[14px] xl:text-[22px] text-[#1a202c] capitalize">
           Recently Viewed
         </p>
         <img src="/divesea/icons/menu.svg" class="w-[10px]" />

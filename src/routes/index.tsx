@@ -43,17 +43,17 @@ export default function Home() {
       <main class="max-w-full overflow-hidden">
         <ScrollReveal />
         <div class="mt-[20px] lg:mt-[80px] flex flex-col lg:flex-row gap-[60px] lg:gap-[48px] justify-center">
-          <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 lg:ml-25 lg:max-w-[568px] lg:w-44/100 mt-[10px]">
+          <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 ml-[60px] xl:ml-25 lg:max-w-[568px] lg:w-38/100 xl:w-44/100 mt-[10px]">
             <div class="bg-[#201f1f] h-[1px] w-[195px] reveal-hr invisible hidden lg:block" />
-            <h1 class="font-[Poppins] font-semibold text-[47.4px]/[120%] tracking-[-1.9px] lg:text-[75px]/[120%] lg:mt-[10px] reveal-title invisible">
+            <h1 class="font-[Poppins] font-semibold text-[47.4px]/[120%] lg:text-[54px]/[120%] xl:text-[75px]/[120%] tracking-[-1.9px] lg:mt-[10px] reveal-title invisible">
               Discover And Create NFTs
             </h1>
-            <p class="mt-[10px] lg:mt-[12px] max-w-[500px] font-[Inter] font-normal text-[#676767] text-[18px] reveal-desc invisible">
+            <p class="mt-[10px] lg:mt-[12px] max-w-[500px] font-[Inter] font-normal text-[#676767] text-[12px] xl:text-[18px] reveal-desc invisible">
               Discover, Create and Sell NFTs On Our NFT Marketplace With Over
               Thousands Of NFTs And Get a{" "}
               <span class="font-semibold text-[#141416]">$20&nbsp;bonus</span>.
             </p>
-            <div class="flex flex-row gap-[23px] mt-[45px] reveal-buttons invisible">
+            <div class="flex flex-row gap-[23px] mt-[40px] lg:mt-[30px] xl:mt-[45px] reveal-buttons invisible">
               <Button size="md" fill>
                 Explore More
               </Button>
@@ -65,7 +65,7 @@ export default function Home() {
               src="/divesea/icons/trust.svg"
               class="mx-auto mt-[20px] lg:hidden reveal-trust invisible"
             />
-            <div class="hidden lg:flex flex-row gap-[46px] mt-[82px]">
+            <div class="hidden lg:flex flex-row gap-[46px] mt-[60px] lg:mt-[82px]">
               <Stat
                 count={430}
                 caption="Art Works"
@@ -83,7 +83,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div class="w-full pl-[30px] lg:pl-0 lg:max-w-[758px] lg:w-56/100 flex self-start">
+          <div class="w-full pl-[30px] lg:pl-0 lg:max-w-[758px] lg:w-62/100 xl:w-56/100 flex self-start">
             <div class="w-[calc(100%+55px)] mr-[-55px] lg:w-full lg:mr-0 aspect-758/522 flex gap-[6.3%] relative ">
               <img
                 src="/divesea/icons/arrow.svg"
@@ -141,34 +141,34 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="text-center lg:text-start mt-[80px] lg:mt-[164px] bg-[#f1f1f1] flex flex-col items-center pt-[70px] pb-[55px] lg:pb-[90px] max-w-screen relative">
-          <h2 class="font-[Poppins] text-[30px] lg:text-[45px] text-[#c5c5c5] font-semibold">
+        <div class="text-center lg:text-start mt-[80px] lg:mt-[100px] xl:mt-[164px] bg-[#f1f1f1] flex flex-col items-center pt-[70px] pb-[55px] lg:pb-[90px] max-w-screen relative">
+          <h2 class="font-[Poppins] text-[30px] lg:text-[32px] xl:text-[45px] text-[#c5c5c5] font-semibold">
             Weekly - Top NFT
           </h2>
-          <div class="swiper mt-[60px] lg:mt-[100px] w-full transform-none">
+          <div class="swiper mt-[60px] lg:mt-[70px] xl:mt-[100px] w-full transform-none">
             <div class="swiper-wrapper max-w-full transform-none">
               <For each={NFTS}>
                 {(item) => (
-                  <div class="swiper-slide flex flex-col max-w-[230px] lg:max-w-[320px] px-[15px] lg:px-[20px]">
+                  <div class="swiper-slide flex flex-col max-w-[230px] xl:max-w-[320px] px-[15px] xl:px-[20px]">
                     <Card {...item} />
                   </div>
                 )}
               </For>
             </div>
-            <div class="flex flex-row bg-white w-[102px] h-[42px] lg:h-[68px] lg:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
+            <div class="flex flex-row bg-white w-[102px] h-[42px] xl:h-[68px] xl:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
               <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
                 <img
                   src="/divesea/icons/arrow-left.svg"
-                  class="w-[16px] lg:w-[26px] aspect-square"
+                  class="w-[16px] xl:w-[26px] aspect-square"
                 />
               </button>
               <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
                 <img
                   src="/divesea/icons/arrow-right.svg"
-                  class="w-[16px] lg:w-[26px] aspect-square"
+                  class="w-[16px] xl:w-[26px] aspect-square"
                 />
               </button>
-              <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] lg:h-[26px] rounded-full" />
+              <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] xl:h-[26px] rounded-full" />
             </div>
           </div>
           <Recent onlyLarge position="right" />

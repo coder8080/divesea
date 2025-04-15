@@ -10,9 +10,9 @@ type Props = {
 const Price = (props: Props) => (
   <div class={container({ onlyLarge: props.onlyLarge })}>
     <img src="/divesea/icons/eth.svg" class={eth({ size: props.size })} />
-    <span class={text({ size: props.size, weight: props.weight })}>
+    <div class={text({ size: props.size, weight: props.weight })}>
       {props.price}
-    </span>
+    </div>
   </div>
 );
 
