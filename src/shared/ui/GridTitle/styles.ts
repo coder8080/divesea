@@ -1,7 +1,7 @@
 import { tv } from "tailwind-variants";
 
 export const gridTitle = tv({
-  base: "capitalize font-[Poppins] font-medium text-[14px] lg:text-[22px] text-[#93989A] mb-[48px]",
+  base: "capitalize font-[Poppins] font-medium text-[14px] lg:text-[16px] xl:text-[22px] text-[#93989A] mb-[48px]",
   variants: {
     onlyLarge: {
       true: "hidden lg:block",

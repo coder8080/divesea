@@ -173,11 +173,11 @@ export default function Home() {
           </div>
           <Recent onlyLarge position="right" />
         </div>
-        <div class="mt-[78px] lg:mt-[240px] flex flex-col items-center px-[30px] lg:px-[100px] max-w-[1440px] mx-auto">
-          <h2 class="capitalize font-[Poppins] font-semibold text-[30px] lg:text-[44px] text-[#141416]">
+        <div class="mt-[78px] lg:mt-[240px] flex flex-col items-center px-[30px] lg:px-[60px] xl:px-[100px] max-w-[1440px] mx-auto">
+          <h2 class="capitalize font-[Poppins] font-semibold text-[30px] xl:text-[44px] text-[#141416]">
             Top Collection
           </h2>
-          <div class="grid grid-cols-[1fr_auto] grid-rows-6 lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full lg:gap-x-[80px] mt-[40px] lg:mt-[90px] justify-center text-center items-center">
+          <div class="grid grid-cols-[1fr_auto] grid-rows-6 lg:grid-cols-[1fr_auto_auto_auto_auto_auto] w-full lg:gap-x-[60px] xl:gap-x-[80px] mt-[40px] lg:mt-[90px] justify-center text-center items-center">
             <GridTitle textStart>Collection</GridTitle>
             <GridTitle mobileTextEnd>Volume</GridTitle>
             <GridTitle onlyLarge>24h %</GridTitle>
@@ -186,7 +186,7 @@ export default function Home() {
             <GridTitle onlyLarge>Items</GridTitle>
             <For each={gridRows()}>{(item) => <GridRow {...item} />}</For>
           </div>
-          <a class="font-[Poppins] font-medium text-[#ACADB9] text-[13px] lg:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
+          <a class="font-[Poppins] font-medium text-[#ACADB9] text-[12px] xl:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
             Explore All
             <img src="/divesea/icons/link-arrow.svg" />
           </a>

@@ -8,7 +8,7 @@ export const priceDelta = tv({
     },
     size: {
       sm: "text-[6px] lg:text-[10px] xl:text-[14px]",
-      lg: "text-[14px] xl:text-[24px]",
+      lg: "text-[14px] lg:text-[18px] xl:text-[24px]",
     },
     profit: {
       true: "text-[#10c352]",
