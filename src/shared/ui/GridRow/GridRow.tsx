@@ -14,13 +14,9 @@ const GridRow = (props: Props) => {
   return (
     <>
       <div class="flex flex-row gap-[16px] xl:gap-[24px] h-[46px] lg:h-[60px] xl:h-[84px]">
-        <div
-          class="rounded-full border-[2px] xl:border-[4px] border-white w-[46px] lg:w-[60px] xl:w-[84px] aspect-square"
-          style={{
-            "background-image": `url("/divesea/images/${props.img}")`,
-            "background-size": "cover",
-            "background-position": "center",
-          }}
+        <img
+          class="rounded-full border-[2px] xl:border-[4px] border-white w-[46px] lg:w-[60px] xl:w-[84px] aspect-square object-cover"
+          src={`/divesea/images/${props.img}`}
         />
         <div class="flex flex-col items-start justify-between">
           <span class="font-[Poppins] font-medium text-[16px] lg:text-[20px] xl:text-[28px] text-[#141416]">

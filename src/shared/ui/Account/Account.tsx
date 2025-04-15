@@ -7,14 +7,8 @@ type Props = {
 const Account = (props: Props) => (
   <div class="flex flex-row justify-between items-center">
     <div class="flex flex-row gap-[6px] lg:gap-[14px]">
-      <div
-        class="relative rounded-full w-[24px] lg:w-[34px] xl:w-[48px] aspect-square"
-        style={{
-          "background-image": `url("/divesea/images/${props.img}")`,
-          "background-size": "cover",
-          "background-position": "center",
-        }}
-      >
+      <div class="relative w-[24px] lg:w-[34px] xl:w-[48px] aspect-square">
+        <img src={`/divesea/images/${props.img}`} class="object-cover w-full h-full rounded-full" />
         <span class="absolute top-0 right-0 bg-[#23262F] font-[Poppins] font-[600] text-[5px] lg:text-[8px] xl:text-[10px] text-[#FCFCFD] w-[10px] lg:w-[14px] xl:w-[20px] aspect-square flex items-center justify-center rounded-full">
           {props.index + 1}
         </span>

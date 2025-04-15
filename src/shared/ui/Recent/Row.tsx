@@ -14,13 +14,9 @@ const Row = (props: Props) => {
     <div class="flex flex-row justify-between">
       <div class="flex flex-row gap-[8px] lg:gap-[16px]">
         <div class="relative">
-          <div
+          <img
             class="aspect-square w-[20px] lg:w-[32px] xl:w-[46px] rounded-full"
-            style={{
-              "background-image": `url("/divesea/images/${props.img}")`,
-              "background-position": "center",
-              "background-size": "cover",
-            }}
+            src={`/divesea/images/${props.img}`}
           />
           <div class="absolute translate-x-1/3 right-0 bottom-0 aspect-square w-[10px] lg:w-[15px] xl:w-[22px] rounded-full bg-white flex items-center justify-center font-[Poppins] font-bold text-[5px] lg:text-[8px] xl:text-[12px] text-[#141416]">
             {props.index + 1}

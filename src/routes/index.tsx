@@ -78,46 +78,25 @@ export default function Home() {
                   <div class="atropos-scale">
                     <div class="atropos-rotate">
                       <div class="atropos-inner">
-                        <div
-                          class="w-full rounded-2xl aspect-square"
-                          style={{
-                            "background-image": `url("/divesea/images/1.png")`,
-                            "background-position": "center",
-                            "background-size": "cover",
-                          }}
-                        />
+                        <img src="/divesea/images/1.png" class="object-cover w-full rounded-2xl aspect-square" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1"
-                  style={{
-                    "background-image": `url("/divesea/images/1.png")`,
-                    "background-position": "center",
-                    "background-size": "cover",
-                    filter: "blur(50px)",
-                  }}
+                <img
+                  src="/divesea/images/1.png"
+                  class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1 object-cover blur-[50px]"
                 />
               </div>
               <div class="relative w-320/758 flex flex-row">
                 <div class="w-full relative self-end reveal-img2 invisible">
-                  <div
-                    class="w-full rounded-2xl aspect-square mb-[24px]"
-                    style={{
-                      "background-image": `url("/divesea/images/img-source.png")`,
-                      "background-position": "center",
-                      "background-size": "cover",
-                    }}
+                  <img
+                    src="/divesea/images/img-source.png"
+                    class="w-full rounded-2xl aspect-square mb-[24px] object-cover"
                   />
-                  <div
-                    class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1"
-                    style={{
-                      "background-image": `url("/divesea/images/img-source.png")`,
-                      "background-position": "center",
-                      "background-size": "cover",
-                      filter: "blur(50px)",
-                    }}
+                  <img
+                    class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1 blur-[50px]"
+                    src="/divesea/images/img-source.png"
                   />
                 </div>
                 <div class="absolute right-[55px] lg:right-0 top-0 w-110/320 h-170/522 reveal-grid invisible bg-size-[8px_8px] lg:bg-size-[16px_16px] -z-1 bg-[radial-gradient(#000_1px,_transparent_0)] lg:bg-[radial-gradient(#000_2px,_transparent_0)]" />
@@ -194,14 +173,8 @@ export default function Home() {
             <Recent position="left" />
             <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[230px] xl:w-[325px] p-[6px] lg:p-[8px] xl:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[8px] xl:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
               <div class="rounded-full w-[4px] lg:w-[5px] xl:w-[8px] aspect-square bg-[#141416] self-center" />
-              <div
-                class="rounded-full w-[20px] lg:w-[30px] xl:w-[40px] aspect-square relative"
-                style={{
-                  "background-image": `url("/divesea/images/1.png")`,
-                  "background-size": "cover",
-                  "background-position": "center",
-                }}
-              >
+              <div class="w-[20px] lg:w-[30px] xl:w-[40px] aspect-square relative">
+                <img src="/divesea/images/1.png" class="object-cover rounded-full w-full h-full" />
                 <img
                   src="/divesea/icons/verified.svg"
                   class="aspect-square w-[8px] lg:w-[12px] xl:w-[17px] absolute top-0 right-0 translate-x-1/4"
@@ -221,14 +194,10 @@ export default function Home() {
                 </span>
               </div>
               <div />
-              <div
-                class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[43px] xl:w-[60px] aspect-square"
-                style={{
-                  "background-image": `url("/divesea/images/1.png")`,
-                  "background-position": "center",
-                  "background-size": "cover",
-                }}
-              ></div>
+              <img
+                class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[43px] xl:w-[60px] aspect-square object-cover"
+                src="/divesea/images/1.png"
+              />
               <div class="col-span-2" />
               <div class="font-[Poppins] font-semibold text-[6px] lg:text-[8px] xl:text-[12px] text-[#949494]">
                 6 Oct 2022, 11:44 PM
@@ -245,7 +214,7 @@ export default function Home() {
               <p class="font-[Poppins] font-medium text-[10px] lg:text-[14px] xl:text-[20px] text-[#a4a4a4] mt-[6px] lg:mt-[12.48px]">
                 World’s Largest NFT Place
               </p>
-              <div class="flex flex-row justify-center lg:justify-start gap-[15px] lg:gap-[22px] xl:gap-[30px] mt-[25px] lg:mt-[35px] xl:mt-auto">
+              <div class="flex flex-row justify-center lg:justify-start gap-[15px] lg:gap-[22px] xl:gap-[30px] mt-[25px] lg:mt-[35px] xl:mt-[auto]">
                 <Button size="xl" white fill>
                   Explore More
                 </Button>
@@ -253,22 +222,10 @@ export default function Home() {
               </div>
             </div>
             <div class="relative w-full lg:w-[260px] xl:w-[369px] aspect-369/249">
-              <div
-                class="absolute inset-0 rounded-xl z-2"
-                style={{
-                  "background-image": `url("/divesea/images/1.png")`,
-                  "background-position": "center",
-                  "background-size": "cover",
-                }}
-              />
-              <div
-                class="absolute top-0 lg:top-[15px] left-[-8px] lg:left-[-12px] right-[-6px] lg:right-[-9px] bottom-[-8px] lg:bottom-[-15px] z-1"
-                style={{
-                  "background-image": `url("/divesea/images/1.png")`,
-                  "background-position": "center",
-                  "background-size": "cover",
-                  filter: "blur(52.87px)",
-                }}
+              <img class="h-full absolute inset-0 rounded-xl z-2 object-cover" src="/divesea/images/1.png" />
+              <img
+                class="absolute top-0 lg:top-[15px] left-[-8px] lg:left-[-12px] right-[-6px] lg:right-[-9px] bottom-[-8px] lg:bottom-[-15px] z-1 object-cover blur-[50px]"
+                src="/divesea/images/1.png"
               />
             </div>
           </div>
