@@ -5,11 +5,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  ssr: true,
   server: {
-    baseURL: "/divesea",
-    preset: "githubPages",
-    prerender: {
-      crawlLinks: true,
-    },
+    baseURL: "/divesea/",
+    preset: "static",
   },
 });
