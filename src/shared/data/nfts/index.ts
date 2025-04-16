@@ -20,7 +20,7 @@ const NFTS: Nft[] = [
     owners: 6.7,
     items: 500,
     volume: 2.194,
-    img: "1.png",
+    img: "1.webp",
   },
   {
     id: "69fc15a0-12f1-44c8-a6a2-6c3142d7aabb",
@@ -31,7 +31,7 @@ const NFTS: Nft[] = [
     owners: 2.3,
     items: 800,
     volume: 7.512,
-    img: "2.png",
+    img: "2.webp",
   },
   {
     id: "c2a19cc9-6fc0-4dbf-bad5-c0983659f275",
@@ -42,7 +42,7 @@ const NFTS: Nft[] = [
     owners: 9.0,
     items: 700,
     volume: 6.803,
-    img: "3.png",
+    img: "3.webp",
   },
   {
     id: "7255f96e-f924-4976-a403-3d99efb58ed3",
@@ -53,7 +53,7 @@ const NFTS: Nft[] = [
     owners: 3.2,
     items: 1000,
     volume: 1.928,
-    img: "4.png",
+    img: "4.webp",
   },
   {
     id: "b26c6ee8-f91f-4b2c-9614-e4b25aaac7a0",
@@ -64,7 +64,7 @@ const NFTS: Nft[] = [
     owners: 7.8,
     items: 600,
     volume: 4.476,
-    img: "5.png",
+    img: "5.webp",
   },
   {
     id: "9e1d02cb-6e41-4a2b-a53c-369ddcb7cd2b",
@@ -75,7 +75,7 @@ const NFTS: Nft[] = [
     owners: 4.1,
     items: 400,
     volume: 9.871,
-    img: "6.jpg",
+    img: "6.webp",
   },
   {
     id: "aef0bff3-f49c-4f84-817c-6c876ee0f617",
@@ -86,7 +86,7 @@ const NFTS: Nft[] = [
     owners: 5.5,
     items: 300,
     volume: 6.543,
-    img: "7.jpg",
+    img: "7.webp",
   },
   {
     id: "157b4cd1-c7ec-4b26-9251-d7e33d255df6",
@@ -97,7 +97,7 @@ const NFTS: Nft[] = [
     owners: 2.8,
     items: 900,
     volume: 8.339,
-    img: "8.jpg",
+    img: "8.webp",
   },
   {
     id: "da90b729-1fa7-4a5d-8056-1fcbbf2ea7a8",
@@ -108,7 +108,7 @@ const NFTS: Nft[] = [
     owners: 3.6,
     items: 600,
     volume: 5.123,
-    img: "9.jpg",
+    img: "9.webp",
   },
   {
     id: "1086678a-e67f-4302-a9f2-346f9cf31947",
@@ -119,7 +119,7 @@ const NFTS: Nft[] = [
     owners: 8.4,
     items: 700,
     volume: 3.087,
-    img: "10.jpg",
+    img: "10.webp",
   },
   {
     id: "d88dc1a7-8b4e-4261-a56c-f1ef5e22c1f3",
@@ -130,7 +130,7 @@ const NFTS: Nft[] = [
     owners: 1.9,
     items: 200,
     volume: 1.274,
-    img: "11.jpg",
+    img: "11.webp",
   },
   {
     id: "4d637df0-cbcb-48c7-bb6c-f3556e4ad2b0",
@@ -141,7 +141,7 @@ const NFTS: Nft[] = [
     owners: 9.9,
     items: 300,
     volume: 2.681,
-    img: "12.jpg",
+    img: "12.webp",
   },
   {
     id: "07bfb24f-07b7-4cf8-bd3e-8350b75a09c4",
@@ -152,7 +152,7 @@ const NFTS: Nft[] = [
     owners: 2.4,
     items: 800,
     volume: 9.621,
-    img: "13.jpg",
+    img: "13.webp",
   },
   {
     id: "4f54b4d7-56c5-4de0-bc2c-6d62231591d2",
@@ -163,7 +163,7 @@ const NFTS: Nft[] = [
     owners: 7.2,
     items: 600,
     volume: 4.831,
-    img: "14.jpg",
+    img: "14.webp",
   },
   {
     id: "b74f0e51-8e52-4325-95d0-8e16ebfbc24d",
@@ -174,7 +174,7 @@ const NFTS: Nft[] = [
     owners: 6.3,
     items: 400,
     volume: 3.934,
-    img: "15.jpg",
+    img: "15.webp",
   },
   {
     id: "d53bc391-441a-460e-b7be-4f3367b6d4dc",
@@ -185,7 +185,7 @@ const NFTS: Nft[] = [
     owners: 3.0,
     items: 500,
     volume: 7.11,
-    img: "16.jpg",
+    img: "16.webp",
   },
   {
     id: "a4e2933f-8797-4937-b89c-7f5fdce71f20",
@@ -196,7 +196,7 @@ const NFTS: Nft[] = [
     owners: 8.7,
     items: 1000,
     volume: 1.583,
-    img: "17.jpg",
+    img: "17.webp",
   },
   {
     id: "96b66f7b-b683-4133-a8d1-4b1e5dd7b1fa",
@@ -207,7 +207,7 @@ const NFTS: Nft[] = [
     owners: 5.9,
     items: 200,
     volume: 2.797,
-    img: "18.jpg",
+    img: "18.webp",
   },
   {
     id: "edb96de5-1b17-4b7d-bb51-708c3e2b36c4",
@@ -218,7 +218,7 @@ const NFTS: Nft[] = [
     owners: 4.4,
     items: 600,
     volume: 9.002,
-    img: "19.jpg",
+    img: "19.webp",
   },
   {
     id: "e43d8b4a-8f90-41ae-a393-ef61df18555f",
@@ -229,7 +229,7 @@ const NFTS: Nft[] = [
     owners: 6.6,
     items: 900,
     volume: 3.328,
-    img: "20.jpg",
+    img: "20.webp",
   },
   {
     id: "17878b26-e1a5-4e29-bdf0-6a8e2d3b377c",
@@ -240,7 +240,7 @@ const NFTS: Nft[] = [
     owners: 2.6,
     items: 100,
     volume: 6.663,
-    img: "21.jpg",
+    img: "21.webp",
   },
   {
     id: "0fe2a6e4-768e-4e36-80b1-e4217cdef345",
@@ -251,7 +251,7 @@ const NFTS: Nft[] = [
     owners: 1.1,
     items: 500,
     volume: 8.104,
-    img: "22.jpg",
+    img: "22.webp",
   },
 ]
 
