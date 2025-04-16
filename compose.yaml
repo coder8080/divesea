@@ -1,0 +1,6 @@
+services:
+  nginx:
+    container_name: divesea_nginx
+    build: .
+    ports:
+      - 5000:5000

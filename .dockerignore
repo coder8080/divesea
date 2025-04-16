@@ -1,0 +1,12 @@
+.github
+.output
+.vinxi
+node_modules
+.dockerignore
+.gitignore
+.prettierrc
+compose.yaml
+Dockerfile
+favicon.pxd
+pnpm-lock.yaml
+README.md
