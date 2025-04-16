@@ -8,6 +8,6 @@ export default defineConfig({
   ssr: true,
   server: {
     baseURL: "/divesea/",
-    preset: "static",
+    preset: "githubPages",
   },
 })
