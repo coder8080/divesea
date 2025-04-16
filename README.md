@@ -24,7 +24,8 @@
 
 ## About The Project
 
-[![DiveSea Screenshot](screenshot.png)](https://coder8080.github.io/divesea/)
+[![DiveSea Screenshot](static/screenshot.png)](https://coder8080.github.io/divesea/)
+[![LightHouse Screenshot](static/lighthouse.png)](https://coder8080.github.io/divesea/)
 
 Built from [figma template](https://www.figma.com/design/VcgXyogEdaIAhaVBPlf5nC/DiveSea?node-id=5-17704&t=bRVSPqYxwYWM81oc-0) with minor improvements. Performant, accessible, adaptive, SEO-optimized.
 
