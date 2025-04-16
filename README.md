@@ -37,7 +37,10 @@ Built from [figma template](https://www.figma.com/design/VcgXyogEdaIAhaVBPlf5nC/
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+
+### Development mode
+
+#### Prerequisites
 
 * node >= 22
 * pnpm
@@ -45,8 +48,7 @@ To get a local copy up and running follow these simple example steps.
   npm install pnpm -g
   ```
 
-
-### Development mode
+#### Steps
 
 1. Clone the repo
    ```sh
@@ -57,25 +59,20 @@ To get a local copy up and running follow these simple example steps.
    pnpm install
    ```
 3. Run project in development mode
-  ```sh
-  pnpm run dev
-  ```
+   ```sh
+   pnpm run dev
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Production mode
 
-Docker is set up for production. Site will be available on [http://localhost:5000/divesea](http://localhost:5000/divesea)
+You will need [Docker](https://www.docker.com) to run in production mode. Site will be available at [http://localhost:5000/divesea](http://localhost:5000/divesea)
 
-1. Install [Docker](https://www.docker.com)
-   ```sh
-   bash <(curl -fsSL get.docker.com)
-   ```
-2. Run project
-   ```sh
-   docker compose up --build
-   ```
+```sh
+docker compose up --build
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
