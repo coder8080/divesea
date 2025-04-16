@@ -11,6 +11,7 @@ const Card = (props: Props) => {
           src={`/divesea/images/${props.img}`}
           class="object-cover w-full aspect-square rounded-3xl"
           loading="lazy"
+          alt={`NFT ${props.title}`}
         />
         <div class="swiper-lazy-preloader"></div>
         <div class="absolute top-[10px] right-[8px] xl:top-[14px] xl:right-[10px] bg-[#1C1D2059]/65 rounded-lg xl:rounded-xl px-[10px] py-[6px] xl:px-[14px] xl:py-[8px] text-white text-[10px] xl:text-[14px] font-[Poppins] font-medium text-nowrap">

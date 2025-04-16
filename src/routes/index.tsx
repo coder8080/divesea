@@ -61,7 +61,11 @@ export default function Home() {
                 Create NFT
               </Button>
             </div>
-            <img src="/divesea/icons/trust.svg" class="w-[240px] mx-auto mt-[20px] lg:hidden reveal-trust invisible" />
+            <img
+              src="/divesea/icons/trust.svg"
+              class="w-[240px] mx-auto mt-[20px] lg:hidden reveal-trust invisible"
+              alt="Trustpilot 5-star"
+            />
             <div class="hidden lg:flex flex-row gap-[46px] mt-[60px] lg:mt-[82px]">
               <Stat count={430} caption="Art Works" class="reveal-stat-1 invisible" />
               <Stat count={159} caption="Creators" class="reveal-stat-2 invisible" />
@@ -72,6 +76,7 @@ export default function Home() {
             <div class="w-[calc(100%+55px)] mr-[-55px] lg:w-full lg:mr-0 aspect-758/522 flex gap-[6.3%] relative ">
               <img
                 src="/divesea/icons/arrow.svg"
+                alt="Arrow"
                 class="absolute top-50/522 w-128/758 right-184/758 reveal-arrow invisible"
               />
               <div class="w-390/758 self-start relative">
@@ -79,7 +84,11 @@ export default function Home() {
                   <div class="atropos-scale">
                     <div class="atropos-rotate">
                       <div class="atropos-inner">
-                        <img src="/divesea/images/1.webp" class="object-cover w-full rounded-2xl aspect-square" />
+                        <img
+                          src="/divesea/images/1.webp"
+                          class="object-cover w-full rounded-2xl aspect-square"
+                          alt="NFT"
+                        />
                       </div>
                     </div>
                   </div>
@@ -87,16 +96,19 @@ export default function Home() {
                 <img
                   src="/divesea/images/1.webp"
                   class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1 object-cover blur-[50px]"
+                  alt="Blurred Shadow"
                 />
               </div>
               <div class="relative w-320/758 flex flex-row">
                 <div class="w-full relative self-end reveal-img2 invisible">
                   <img
                     src="/divesea/images/img-source.webp"
+                    alt="NFT"
                     class="w-full rounded-2xl aspect-square mb-[24px] object-cover"
                   />
                   <img
                     class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1 blur-[50px]"
+                    alt="Blurred Shadow"
                     src="/divesea/images/img-source.webp"
                   />
                 </div>
@@ -124,13 +136,23 @@ export default function Home() {
                 class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer"
                 aria-label="move left"
               >
-                <img loading="lazy" src="/divesea/icons/arrow-left.svg" class="w-[16px] xl:w-[26px] aspect-square" />
+                <img
+                  loading="lazy"
+                  src="/divesea/icons/arrow-left.svg"
+                  class="w-[16px] xl:w-[26px] aspect-square"
+                  alt="Move Left"
+                />
               </button>
               <button
                 class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer"
                 aria-label="move right"
               >
-                <img loading="lazy" src="/divesea/icons/arrow-right.svg" class="w-[16px] xl:w-[26px] aspect-square" />
+                <img
+                  loading="lazy"
+                  src="/divesea/icons/arrow-right.svg"
+                  class="w-[16px] xl:w-[26px] aspect-square"
+                  alt="Move Right"
+                />
               </button>
               <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] xl:h-[26px] rounded-full" />
             </div>
@@ -152,7 +174,7 @@ export default function Home() {
           </div>
           <a class="font-[Poppins] font-medium text-[#ACADB9] text-[12px] xl:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
             Explore All
-            <img loading="lazy" src="/divesea/icons/link-arrow.svg" />
+            <img loading="lazy" src="/divesea/icons/link-arrow.svg" alt="Link" />
           </a>
         </div>
         <div class="grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] gap-[80px] lg:gap-0 px-[30] lg:px-[100px] mt-[140px] max-w-[1245px] mx-auto">
@@ -181,11 +203,17 @@ export default function Home() {
             <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[230px] xl:w-[325px] p-[6px] lg:p-[8px] xl:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[8px] xl:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
               <div class="rounded-full w-[4px] lg:w-[5px] xl:w-[8px] aspect-square bg-[#141416] self-center" />
               <div class="w-[20px] lg:w-[30px] xl:w-[40px] aspect-square relative">
-                <img loading="lazy" src="/divesea/images/1.webp" class="object-cover rounded-full w-full h-full" />
+                <img
+                  loading="lazy"
+                  src="/divesea/images/1.webp"
+                  class="object-cover rounded-full w-full h-full"
+                  alt="NFT with new BID"
+                />
                 <img
                   loading="lazy"
                   src="/divesea/icons/verified.svg"
                   class="aspect-square w-[8px] lg:w-[12px] xl:w-[17px] absolute top-0 right-0 translate-x-1/4"
+                  alt="Verified"
                 />
               </div>
               <div class="flex flex-col">
@@ -230,10 +258,11 @@ export default function Home() {
               </div>
             </div>
             <div class="relative w-full lg:w-[260px] xl:w-[369px] aspect-369/249">
-              <img class="h-full absolute inset-0 rounded-xl z-2 object-cover" src="/divesea/images/1.webp" />
+              <img class="h-full absolute inset-0 rounded-xl z-2 object-cover" src="/divesea/images/1.webp" alt="NFT" />
               <img
                 class="absolute top-0 lg:top-[15px] left-[-8px] lg:left-[-12px] right-[-6px] lg:right-[-9px] bottom-[-8px] lg:bottom-[-15px] z-1 object-cover blur-[50px]"
                 src="/divesea/images/1.webp"
+                alt="Blurred Shadow"
               />
             </div>
           </div>

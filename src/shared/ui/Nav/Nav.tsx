@@ -29,11 +29,11 @@ const Nav = () => {
         </div>
         <div class="flex flex-row xl:hidden w-full py-[16px] justify-between">
           <div class="flex flex-row gap-[7px] items-center">
-            <img src="/divesea/icons/wave_black.svg" />
+            <img src="/divesea/icons/wave_black.svg" alt="Logo" />
             <span class="font-[Poppins] font-semibold text-[21.36px] text-black">DiveSea</span>
           </div>
           <button onClick={toggle} aria-label="open navigation">
-            <img src="/divesea/icons/burger.svg" />
+            <img src="/divesea/icons/burger.svg" alt="Menu" />
           </button>
         </div>
       </nav>

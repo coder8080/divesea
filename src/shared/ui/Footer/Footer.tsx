@@ -8,6 +8,7 @@ const Footer = () => (
           loading="lazy"
           src="/divesea/icons/wave_white.svg"
           class="aspect-square w-[44px] lg:w-[46px] xl:w-[65px]"
+          alt="Logo"
         />
         <span class="font-[Poppins] font-semibold text-[20px] lg:text-[22px] xl:text-[30px] text-white">DiveSea</span>
       </div>
