@@ -36,7 +36,7 @@ Built from [figma template](https://www.figma.com/design/VcgXyogEdaIAhaVBPlf5nC/
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 
 ### Development mode
@@ -96,7 +96,8 @@ Project Link: [https://github.com/coder8080/divesea](https://github.com/coder808
 
 ## Acknowledgments
 
-* [Figma Template](https://www.figma.com/design/VcgXyogEdaIAhaVBPlf5nC/DiveSea?node-id=5-1960&p=f&t=rLgyD0mHxQi70U5X-0)
+* [Figma template](https://www.figma.com/design/VcgXyogEdaIAhaVBPlf5nC/DiveSea?node-id=5-1960&p=f&t=rLgyD0mHxQi70U5X-0)
 * [Useful templates list](https://verstaem.online)
+* [README template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
