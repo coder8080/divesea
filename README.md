@@ -1,16 +1,19 @@
 <a id="readme-top"></a>
 
+<div align="center">
+
 [![SolidJS](https://img.shields.io/badge/Solid%20JS-2C4F7C?style=for-the-badge&logo=solid&logoColor=white)](https://www.solidjs.com)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![pnpm](https://img.shields.io/badge/pnpm-yellow?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io)
 [![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github%20Pages&logoColor=white)](https://coder8080.github.io/divesea)
 [![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/coder8080/divesea/actions)
 
-
-<br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="public/icons/logo.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/coder8080/divesea">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="public/icons/wave_white.svg">
+      <img src="public/icons/wave_black.svg" alt="Logo" width="80" height="80">
+    </picture>
   </a>
 
   <h3 align="center">DiveSea</h3>
