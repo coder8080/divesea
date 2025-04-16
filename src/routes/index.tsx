@@ -61,7 +61,7 @@ export default function Home() {
                 Create NFT
               </Button>
             </div>
-            <img src="/divesea/icons/trust.svg" class="mx-auto mt-[20px] lg:hidden reveal-trust invisible" />
+            <img src="/divesea/icons/trust.svg" class="w-[240px] mx-auto mt-[20px] lg:hidden reveal-trust invisible" />
             <div class="hidden lg:flex flex-row gap-[46px] mt-[60px] lg:mt-[82px]">
               <Stat count={430} caption="Art Works" class="reveal-stat-1 invisible" />
               <Stat count={159} caption="Creators" class="reveal-stat-2 invisible" />
@@ -120,10 +120,16 @@ export default function Home() {
               </For>
             </div>
             <div class="flex flex-row bg-white w-[102px] h-[42px] xl:h-[68px] xl:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
-              <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
+              <button
+                class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer"
+                aria-label="move left"
+              >
                 <img loading="lazy" src="/divesea/icons/arrow-left.svg" class="w-[16px] xl:w-[26px] aspect-square" />
               </button>
-              <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
+              <button
+                class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer"
+                aria-label="move right"
+              >
                 <img loading="lazy" src="/divesea/icons/arrow-right.svg" class="w-[16px] xl:w-[26px] aspect-square" />
               </button>
               <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] xl:h-[26px] rounded-full" />

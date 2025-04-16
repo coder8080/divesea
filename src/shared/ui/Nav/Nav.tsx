@@ -32,7 +32,7 @@ const Nav = () => {
             <img src="/divesea/icons/wave_black.svg" />
             <span class="font-[Poppins] font-semibold text-[21.36px] text-black">DiveSea</span>
           </div>
-          <button onClick={toggle}>
+          <button onClick={toggle} aria-label="open navigation">
             <img src="/divesea/icons/burger.svg" />
           </button>
         </div>
