@@ -172,7 +172,10 @@ export default function Home() {
             <GridTitle onlyLarge>Items</GridTitle>
             <For each={gridRows()}>{(item) => <GridRow {...item} />}</For>
           </div>
-          <a class="font-[Poppins] font-medium text-[#ACADB9] text-[12px] xl:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
+          <a
+            class="font-[Poppins] font-medium text-[#ACADB9] text-[12px] xl:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]"
+            href="#"
+          >
             Explore All
             <img loading="lazy" src="/divesea/icons/link-arrow.svg" alt="Link" />
           </a>

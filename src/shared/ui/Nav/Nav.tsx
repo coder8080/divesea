@@ -12,12 +12,20 @@ const Nav = () => {
       <nav class="flex justify-center sticky top-0 w-full bg-[#f9f9f9]/40 backdrop-blur-3xl z-3 px-[28px] xl:px-0 xl:pt-[20px] xl:mt-[25px]">
         <div class="max-w-[1200px] xl:flex flex-row items-center gap-[118px] h-[78px] pb-[20px] hidden">
           <div class="flex flex-row gap-[57px] items-center">
-            <img src="/divesea/icons/logo.svg" class="w-[53px] h-[53px]" />
+            <img src="/divesea/icons/logo.svg" class="w-[53px] h-[53px]" alt="Logo" />
             <div class="flex flex-row gap-[24px]">
-              <a class="nav-link">Discover</a>
-              <a class="nav-link">Creators</a>
-              <a class="nav-link">Sell</a>
-              <a class="nav-link">Stats</a>
+              <a class="nav-link" href="#">
+                Discover
+              </a>
+              <a class="nav-link" href="#">
+                Creators
+              </a>
+              <a class="nav-link" href="#">
+                Sell
+              </a>
+              <a class="nav-link" href="#">
+                Stats
+              </a>
             </div>
           </div>
           <div class="flex flex-row gap-[30px] items-center">
@@ -44,10 +52,18 @@ const Nav = () => {
         }}
         onClick={toggle}
       >
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Discover</a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Creators</a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Sell</a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]">Stats</a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
+          Discover
+        </a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
+          Creators
+        </a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
+          Sell
+        </a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
+          Stats
+        </a>
       </div>
     </>
   )
