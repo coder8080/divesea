@@ -2,6 +2,7 @@ import Button from "~/shared/ui/Button"
 import Search from "./Search"
 import "./styles.css"
 import { createSignal } from "solid-js"
+import { A } from "@solidjs/router"
 
 const Nav = () => {
   const [show, setShow] = createSignal<boolean>(false)
@@ -12,7 +13,9 @@ const Nav = () => {
       <nav class="flex justify-center sticky top-0 w-full bg-[#f9f9f9]/40 backdrop-blur-3xl z-3 px-[28px] xl:px-0 xl:pt-[20px] xl:mt-[25px]">
         <div class="max-w-[1200px] xl:flex flex-row items-center gap-[118px] h-[78px] pb-[20px] hidden">
           <div class="flex flex-row gap-[57px] items-center">
-            <img src="/divesea/icons/logo.svg" class="w-[53px] h-[53px]" alt="Logo" />
+            <A href="/#">
+              <img src="/divesea/icons/logo.svg" class="w-[53px] h-[53px]" alt="Logo" />
+            </A>
             <div class="flex flex-row gap-[24px]">
               <a class="nav-link" href="#weekly">
                 Weekly
