@@ -14,16 +14,16 @@ const Nav = () => {
           <div class="flex flex-row gap-[57px] items-center">
             <img src="/divesea/icons/logo.svg" class="w-[53px] h-[53px]" alt="Logo" />
             <div class="flex flex-row gap-[24px]">
-              <a class="nav-link" href="#">
-                Discover
+              <a class="nav-link" href="#weekly">
+                Weekly
               </a>
-              <a class="nav-link" href="#">
-                Creators
+              <a class="nav-link" href="#collection">
+                Collection
               </a>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#sell">
                 Sell
               </a>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#stats">
                 Stats
               </a>
             </div>
@@ -52,17 +52,14 @@ const Nav = () => {
         }}
         onClick={toggle}
       >
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
-          Discover
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#weekly">
+          Weekly
         </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
-          Creators
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#collection">
+          Collection
         </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#sell">
           Sell
-        </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#">
-          Stats
         </a>
       </div>
     </>

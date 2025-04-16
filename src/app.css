@@ -55,3 +55,14 @@
 body {
   background-color: #f9f9f9;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}

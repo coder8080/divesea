@@ -54,10 +54,10 @@ export default function Home() {
               <span class="font-semibold text-[#141416]">$20&nbsp;bonus</span>.
             </p>
             <div class="flex flex-row gap-[23px] mt-[40px] lg:mt-[30px] xl:mt-[45px] reveal-buttons invisible">
-              <Button size="md" fill>
+              <Button href="/#weekly" size="md" fill>
                 Explore More
               </Button>
-              <Button size="md" white>
+              <Button href="/#weekly" size="md" white>
                 Create NFT
               </Button>
             </div>
@@ -67,6 +67,7 @@ export default function Home() {
               alt="Trustpilot 5-star"
             />
             <div class="hidden lg:flex flex-row gap-[46px] mt-[60px] lg:mt-[82px]">
+              <a class="anchor" id="stats" />
               <Stat count={430} caption="Art Works" class="reveal-stat-1 invisible" />
               <Stat count={159} caption="Creators" class="reveal-stat-2 invisible" />
               <Stat count={87} caption="Collections" class="reveal-stat-3 invisible" />
@@ -118,6 +119,7 @@ export default function Home() {
           </div>
         </div>
         <div class="text-center lg:text-start mt-[80px] lg:mt-[100px] xl:mt-[164px] bg-[#f1f1f1] flex flex-col items-center pt-[70px] pb-[55px] lg:pb-[90px] max-w-screen relative">
+          <a class="anchor" id="weekly" />
           <h2 class="font-[Poppins] text-[30px] lg:text-[32px] xl:text-[45px] text-[#c5c5c5] font-semibold">
             Weekly - Top NFT
           </h2>
@@ -160,6 +162,7 @@ export default function Home() {
           <Recent onlyLarge position="right" />
         </div>
         <div class="mt-[78px] lg:mt-[240px] flex flex-col items-center px-[30px] lg:px-[60px] xl:px-[100px] max-w-[1440px] mx-auto">
+          <a class="anchor" id="collection" />
           <h2 class="capitalize font-[Poppins] font-semibold text-[30px] xl:text-[44px] text-[#141416]">
             Top Collection
           </h2>
@@ -246,6 +249,7 @@ export default function Home() {
           </div>
         </div>
         <div class="px-[27px] lg:px-[70px] xl:px-[100px] mt-[140px] lg:mt-[200px] w-full">
+          <a class="anchor" id="sell" />
           <div class="w-full max-w-[1245px] rounded-2xl bg-[#141416] flex flex-col lg:flex-row gap-[36px] lg:gap-0 justify-between px-[40px] py-[22px] lg:px-[31px] lg:py-[31px] mx-auto">
             <div class="flex flex-col lg:mt-[13.22px] lg:ml-[35px] items-center text-center lg:items-start lg:text-start">
               <h2 class="font-[Poppins] font-semibold text-[22px] lg:text-[32px] xl:text-[45px] text-white">
@@ -255,10 +259,12 @@ export default function Home() {
                 World’s Largest NFT Place
               </p>
               <div class="flex flex-row justify-center lg:justify-start gap-[15px] lg:gap-[22px] xl:gap-[30px] mt-[25px] lg:mt-[35px] xl:mt-[auto]">
-                <Button size="xl" white fill>
+                <Button size="xl" href="/#weekly" white fill>
                   Explore More
                 </Button>
-                <Button size="xl2">Sell Artwork</Button>
+                <Button size="xl2" href="/#sell">
+                  Sell Artwork
+                </Button>
               </div>
             </div>
             <div class="relative w-full lg:w-[260px] xl:w-[369px] aspect-369/249">
