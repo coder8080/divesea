@@ -4,7 +4,11 @@ const Footer = () => (
   <div class="footer-container">
     <div class="footer">
       <div class="grow flex flex-row items-center gap-[10px]">
-        <img src="/divesea/icons/wave_white.svg" class="aspect-square w-[44px] lg:w-[46px] xl:w-[65px]" />
+        <img
+          loading="lazy"
+          src="/divesea/icons/wave_white.svg"
+          class="aspect-square w-[44px] lg:w-[46px] xl:w-[65px]"
+        />
         <span class="font-[Poppins] font-semibold text-[20px] lg:text-[22px] xl:text-[30px] text-white">DiveSea</span>
       </div>
       <span class="footer-link" id="footer-privacy">

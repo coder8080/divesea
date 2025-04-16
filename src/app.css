@@ -3,45 +3,53 @@
 @font-face {
   font-family: Inter;
   src: url("/divesea/fonts/Inter.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: 400;
   src: url("/divesea/fonts/Poppins-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: 500;
   src: url("/divesea/fonts/Poppins-Medium.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: 600;
   src: url("/divesea/fonts/Poppins-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: 700;
   src: url("/divesea/fonts/Poppins-Bold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: PublicSans;
   src: url("/divesea/fonts/PublicSans.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: DMSans;
   src: url("/divesea/fonts/DMSans.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Outfit;
   src: url("/divesea/fonts/Outfit.ttf");
+  font-display: swap;
 }
 
 body {

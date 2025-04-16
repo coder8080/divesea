@@ -27,6 +27,7 @@ export default function Home() {
       loop: true,
       slidesPerView: "auto",
       centeredSlides: true,
+      lazyPreloadPrevNext: 2,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -120,10 +121,10 @@ export default function Home() {
             </div>
             <div class="flex flex-row bg-white w-[102px] h-[42px] xl:h-[68px] xl:w-[166px] rounded-2xl mx-auto mt-[60px] relative">
               <button class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer">
-                <img src="/divesea/icons/arrow-left.svg" class="w-[16px] xl:w-[26px] aspect-square" />
+                <img loading="lazy" src="/divesea/icons/arrow-left.svg" class="w-[16px] xl:w-[26px] aspect-square" />
               </button>
               <button class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer">
-                <img src="/divesea/icons/arrow-right.svg" class="w-[16px] xl:w-[26px] aspect-square" />
+                <img loading="lazy" src="/divesea/icons/arrow-right.svg" class="w-[16px] xl:w-[26px] aspect-square" />
               </button>
               <div class="absolute left-1/2 top-1/2 -translate-1/2 bg-[#e6e8ec] w-[2px] h-[16px] xl:h-[26px] rounded-full" />
             </div>
@@ -145,7 +146,7 @@ export default function Home() {
           </div>
           <a class="font-[Poppins] font-medium text-[#ACADB9] text-[12px] xl:text-[17px] inline-flex flex-row items-center gap-[12px] lg:gap-[16px] capitalize lg:self-end lg:mt-[40px]">
             Explore All
-            <img src="/divesea/icons/link-arrow.svg" />
+            <img loading="lazy" src="/divesea/icons/link-arrow.svg" />
           </a>
         </div>
         <div class="grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] gap-[80px] lg:gap-0 px-[30] lg:px-[100px] mt-[140px] max-w-[1245px] mx-auto">
@@ -174,8 +175,9 @@ export default function Home() {
             <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[230px] xl:w-[325px] p-[6px] lg:p-[8px] xl:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[8px] xl:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
               <div class="rounded-full w-[4px] lg:w-[5px] xl:w-[8px] aspect-square bg-[#141416] self-center" />
               <div class="w-[20px] lg:w-[30px] xl:w-[40px] aspect-square relative">
-                <img src="/divesea/images/1.png" class="object-cover rounded-full w-full h-full" />
+                <img loading="lazy" src="/divesea/images/1.png" class="object-cover rounded-full w-full h-full" />
                 <img
+                  loading="lazy"
                   src="/divesea/icons/verified.svg"
                   class="aspect-square w-[8px] lg:w-[12px] xl:w-[17px] absolute top-0 right-0 translate-x-1/4"
                 />
