@@ -7,6 +7,7 @@
 [![pnpm](https://img.shields.io/badge/pnpm-yellow?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io)
 [![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github%20Pages&logoColor=white)](https://coder8080.github.io/divesea)
 [![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/coder8080/divesea/actions)
+[![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="public/icons/wave_white.svg">
