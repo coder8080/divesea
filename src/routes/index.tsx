@@ -43,7 +43,7 @@ export default function Home() {
       <main class="max-w-full overflow-hidden">
         <ScrollReveal />
         <div class="mt-[20px] lg:mt-[80px] flex flex-col lg:flex-row gap-[60px] lg:gap-[48px] justify-center">
-          <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 ml-[60px] xl:ml-25 lg:max-w-[568px] lg:w-38/100 xl:w-44/100 mt-[10px]">
+          <div class="flex flex-col items-center lg:items-start lg:text-start text-center px-[32px] lg:px-0 lg:ml-[60px] xl:ml-25 lg:max-w-[568px] lg:w-38/100 xl:w-44/100 mt-[10px]">
             <div class="bg-[#201f1f] h-[1px] w-[195px] reveal-hr invisible hidden lg:block" />
             <h1 class="font-[Poppins] font-semibold text-[47.4px]/[120%] lg:text-[54px]/[120%] xl:text-[75px]/[120%] tracking-[-1.9px] lg:mt-[10px] reveal-title invisible">
               Discover And Create NFTs
