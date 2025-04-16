@@ -251,7 +251,7 @@ export default function Home() {
               <h2 class="font-[Poppins] font-semibold text-[22px] lg:text-[32px] xl:text-[45px] text-white">
                 Create and Sell NFTs
               </h2>
-              <p class="font-[Poppins] font-medium text-[10px] lg:text-[14px] xl:text-[20px] text-[#a4a4a4] mt-[6px] lg:mt-[12.48px]">
+              <p class="font-[Poppins] font-medium text-[11px] lg:text-[14px] xl:text-[20px] text-[#a4a4a4] mt-[6px] lg:mt-[12.48px]">
                 World’s Largest NFT Place
               </p>
               <div class="flex flex-row justify-center lg:justify-start gap-[15px] lg:gap-[22px] xl:gap-[30px] mt-[25px] lg:mt-[35px] xl:mt-[auto]">
