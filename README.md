@@ -1,7 +1,5 @@
 <a id="readme-top"></a>
 
-<div align="center">
-
 [![SolidJS](https://img.shields.io/badge/Solid%20JS-2C4F7C?style=for-the-badge&logo=solid&logoColor=white)](https://www.solidjs.com)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![pnpm](https://img.shields.io/badge/pnpm-yellow?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io)
@@ -9,12 +7,10 @@
 [![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/coder8080/divesea/actions)
 
 <div align="center">
-  <a href="https://github.com/coder8080/divesea">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="public/icons/wave_white.svg">
-      <img src="public/icons/wave_black.svg" alt="Logo" width="80" height="80">
-    </picture>
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/icons/wave_white.svg">
+    <img src="public/icons/wave_black.svg" alt="Logo" width="100" height="100">
+  </picture>
 
   <h3 align="center">DiveSea</h3>
 
@@ -28,7 +24,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://coder8080.github.io/divesea/)
+[![DiveSea Screenshot](screenshot.png)](https://coder8080.github.io/divesea/)
 
 Built from [figma template](https://www.figma.com/design/VcgXyogEdaIAhaVBPlf5nC/DiveSea?node-id=5-17704&t=bRVSPqYxwYWM81oc-0) with minor improvements. Performant, accessible, adaptive, SEO-optimized.
 
