@@ -79,25 +79,25 @@ export default function Home() {
                   <div class="atropos-scale">
                     <div class="atropos-rotate">
                       <div class="atropos-inner">
-                        <img src="/divesea/images/1.png" class="object-cover w-full rounded-2xl aspect-square" />
+                        <img src="/divesea/images/1.webp" class="object-cover w-full rounded-2xl aspect-square" />
                       </div>
                     </div>
                   </div>
                 </div>
                 <img
-                  src="/divesea/images/1.png"
+                  src="/divesea/images/1.webp"
                   class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1 object-cover blur-[50px]"
                 />
               </div>
               <div class="relative w-320/758 flex flex-row">
                 <div class="w-full relative self-end reveal-img2 invisible">
                   <img
-                    src="/divesea/images/img-source.png"
+                    src="/divesea/images/img-source.webp"
                     class="w-full rounded-2xl aspect-square mb-[24px] object-cover"
                   />
                   <img
                     class="w-full rounded-2xl aspect-square absolute bottom-0 -z-1 blur-[50px]"
-                    src="/divesea/images/img-source.png"
+                    src="/divesea/images/img-source.webp"
                   />
                 </div>
                 <div class="absolute right-[55px] lg:right-0 top-0 w-110/320 h-170/522 reveal-grid invisible bg-size-[8px_8px] lg:bg-size-[16px_16px] -z-1 bg-[radial-gradient(#000_1px,_transparent_0)] lg:bg-[radial-gradient(#000_2px,_transparent_0)]" />
@@ -175,7 +175,7 @@ export default function Home() {
             <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-3/5 w-[155px] lg:w-[230px] xl:w-[325px] p-[6px] lg:p-[8px] xl:p-[12px] grid grid-cols-[auto_auto_auto_1fr_auto] gap-x-[6px] lg:gap-x-[8px] xl:gap-x-[12px] bg-white shadow-xl rounded-lg lg:rounded-2xl">
               <div class="rounded-full w-[4px] lg:w-[5px] xl:w-[8px] aspect-square bg-[#141416] self-center" />
               <div class="w-[20px] lg:w-[30px] xl:w-[40px] aspect-square relative">
-                <img loading="lazy" src="/divesea/images/1.png" class="object-cover rounded-full w-full h-full" />
+                <img loading="lazy" src="/divesea/images/1.webp" class="object-cover rounded-full w-full h-full" />
                 <img
                   loading="lazy"
                   src="/divesea/icons/verified.svg"
@@ -198,7 +198,7 @@ export default function Home() {
               <div />
               <img
                 class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[43px] xl:w-[60px] aspect-square object-cover"
-                src="/divesea/images/1.png"
+                src="/divesea/images/1.webp"
               />
               <div class="col-span-2" />
               <div class="font-[Poppins] font-semibold text-[6px] lg:text-[8px] xl:text-[12px] text-[#949494]">
@@ -224,10 +224,10 @@ export default function Home() {
               </div>
             </div>
             <div class="relative w-full lg:w-[260px] xl:w-[369px] aspect-369/249">
-              <img class="h-full absolute inset-0 rounded-xl z-2 object-cover" src="/divesea/images/1.png" />
+              <img class="h-full absolute inset-0 rounded-xl z-2 object-cover" src="/divesea/images/1.webp" />
               <img
                 class="absolute top-0 lg:top-[15px] left-[-8px] lg:left-[-12px] right-[-6px] lg:right-[-9px] bottom-[-8px] lg:bottom-[-15px] z-1 object-cover blur-[50px]"
-                src="/divesea/images/1.png"
+                src="/divesea/images/1.webp"
               />
             </div>
           </div>
