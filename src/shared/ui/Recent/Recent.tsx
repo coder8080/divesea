@@ -18,7 +18,7 @@ const Recent = (props: Props) => {
         <p class="font-[Poppins] font-semibold text-[8px] lg:text-[14px] xl:text-[22px] text-[#1a202c] capitalize">
           Recently Viewed
         </p>
-        <img loading="lazy" src="/divesea/icons/menu.svg" class="w-[10px]" />
+        <img loading="lazy" src="/divesea/icons/menu.svg" class="w-[10px]" alt="Dots" />
       </div>
       <div class="flex flex-col gap-[14px] lg:gap-[20px]">
         <For each={recents()}>{(item, index) => <Row {...item} index={index()} />}</For>

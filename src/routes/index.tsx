@@ -236,6 +236,7 @@ export default function Home() {
               <img
                 class="row-span-2 rounded-lg lg:rounded-xl w-[30px] lg:w-[43px] xl:w-[60px] aspect-square object-cover"
                 src="/divesea/images/1.webp"
+                alt="NFT with new BID preview"
               />
               <div class="col-span-2" />
               <div class="font-[Poppins] font-semibold text-[6px] lg:text-[8px] xl:text-[12px] text-[#949494]">
