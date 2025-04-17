@@ -248,7 +248,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="lg:mt-[180px] xl:mt-[300px] mb-[30px] w-full lg:max-w-[754px] xl:max-w-[1060px] mx-auto aspect-square flex justify-center items-center rounded-full border-[2px] border-[#d2d2d2] relative">
+        <div class="mt-[140px] lg:mt-[180px] xl:mt-[300px] mb-[30px] w-[520px] ml-[calc((100vw-520px)/2)] lg:ml-auto lg:w-full lg:max-w-[754px] xl:max-w-[1060px] mr-auto aspect-square flex justify-center items-center rounded-full border-[2px] border-[#d2d2d2] relative">
           <img
             src="/divesea/images/2.webp"
             class="object-cover rounded-full aspect-square w-52/1060 border-[2px] border-white absolute top-120/1060 left-657/1060"
@@ -282,23 +282,23 @@ export default function Home() {
             class="object-cover rounded-full aspect-square w-65/1060 border-[2px] border-white absolute top-50/1060 left-217/1060"
           />
           <div class="w-830/1060 aspect-square flex flex-col items-center justify-center rounded-full border-[2px] border-[#d2d2d2]">
-            <h2 class="capitalize font-[Poppins] font-bold lg:text-[32px]/[38px] xl:text-[45px]/[54px] text-[#18181b] text-center">
+            <h2 class="capitalize font-[Poppins] font-bold text-[22px]/[26px] lg:text-[32px]/[38px] xl:text-[45px]/[54px] text-[#18181b] text-center">
               Join The
               <br />
               <span class="text-[#c5c5c5]">Community</span>
             </h2>
-            <p class="text-center font-[Poppins] font-normal lg:text-[12px]/[22px] xl:text-[18px]/[32px] text-[#12141d] lg:mt-[22px] xl:mt-[30px] max-w-75/100">
+            <p class="text-center font-[Poppins] font-normal text-[12px]/[22px] xl:text-[18px]/[32px] text-[#12141d] mt-[14px] lg:mt-[22px] xl:mt-[30px] max-w-75/100">
               Our vibrant community is full of collectors, artists, and enthusiasts who share a passion for
               one-of-a-kind digital.
             </p>
-            <div class="lg:mt-[34px] xl:mt-[50px]">
+            <div class="mt-[24px] lg:mt-[34px] xl:mt-[50px]">
               <Button size="xs" fill>
                 Join Our Community
               </Button>
             </div>
           </div>
         </div>
-        <div class="px-[27px] lg:px-[70px] xl:px-[100px] mt-[140px] lg:mt-[120px] w-full">
+        <div class="px-[27px] lg:px-[70px] xl:px-[100px] mt-[100px] lg:mt-[120px] w-full">
           <a class="anchor" id="sell" />
           <div class="w-full max-w-[1245px] rounded-2xl bg-[#141416] flex flex-col lg:flex-row gap-[36px] lg:gap-0 justify-between px-[40px] py-[22px] lg:px-[31px] lg:py-[31px] mx-auto">
             <div class="flex flex-col lg:mt-[13.22px] lg:ml-[35px] items-center text-center lg:items-start lg:text-start">
