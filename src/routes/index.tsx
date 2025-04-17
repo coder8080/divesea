@@ -13,25 +13,19 @@ import GridRow from "~/shared/ui/GridRow"
 import ListItem from "~/shared/ui/ListItem"
 import Account from "~/shared/ui/Account"
 import PageTitle from "~/shared/ui/PageTitle"
+import createEmblaCarousel from "embla-carousel-solid"
 
 export default function Home() {
+  const [emblaRef, emblaApi] = createEmblaCarousel(() => ({
+    loop: true,
+    skipSnaps: true,
+  }))
+
   createEffect(() => {
     Atropos({
       el: ".atropos-img1",
       shadow: false,
       rotateTouch: "scroll-y",
-    })
-
-    new Swiper(".swiper", {
-      modules: [Navigation],
-      loop: true,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      lazyPreloadPrevNext: 2,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
     })
   })
 
@@ -123,11 +117,11 @@ export default function Home() {
           <h2 class="font-[Poppins] text-[30px] lg:text-[32px] xl:text-[45px] text-[#c5c5c5] font-semibold">
             Weekly - Top NFT
           </h2>
-          <div class="swiper mt-[60px] lg:mt-[70px] xl:mt-[100px] w-full transform-none">
-            <div class="swiper-wrapper max-w-full transform-none">
+          <div class="embla mt-[60px] lg:mt-[70px] xl:mt-[100px] w-full transform-none overflow-hidden" ref={emblaRef}>
+            <div class="embla__container max-w-full transform-none flex flex-row select-none">
               <For each={NFTS}>
                 {(item) => (
-                  <div class="swiper-slide flex flex-col max-w-[230px] xl:max-w-[320px] px-[15px] xl:px-[20px]">
+                  <div class="embla__slide min-w-[230px] max-w-[230px] xl:min-w-[320px] xl:max-w-[320px] px-[15px] xl:px-[20px]">
                     <Card {...item} />
                   </div>
                 )}
@@ -137,6 +131,7 @@ export default function Home() {
               <button
                 class="swiper-button-prev flex flex-row items-center justify-center grow cursor-pointer"
                 aria-label="move left"
+                onClick={() => emblaApi()?.scrollPrev()}
               >
                 <img
                   loading="lazy"
@@ -148,6 +143,7 @@ export default function Home() {
               <button
                 class="swiper-button-next flex flex-row items-center justify-center grow cursor-pointer"
                 aria-label="move right"
+                onClick={() => emblaApi()?.scrollNext()}
               >
                 <img
                   loading="lazy"
