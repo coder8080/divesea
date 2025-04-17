@@ -1,13 +1,31 @@
+import { createEffect } from "solid-js"
 import Button from "~/shared/ui/Button"
 import Price from "~/shared/ui/Price"
 
 export type Props = { title: string; timer: string; bid: number; img: string }
 
 const Card = (props: Props) => {
+  let ref: HTMLImageElement
+
+  createEffect(() => {
+    const options = {}
+    const observer = new IntersectionObserver((entries, observer) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          ref!.style.visibility = "visible"
+        } else {
+          ref!.style.visibility = "hidden"
+        }
+      }
+    }, options)
+    observer.observe(ref!)
+  })
+
   return (
     <div class="p-[10px] xl:p-[14px] flex flex-col bg-white w-[200px] xl:w-[280px] rounded-3xl gap-[18px]">
       <div class="relative aspect-square w-full">
         <img
+          ref={ref!}
           src={`/divesea/images/${props.img}`}
           class="object-cover w-full aspect-square rounded-3xl"
           loading="lazy"
