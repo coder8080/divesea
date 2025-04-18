@@ -58,11 +58,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 125px;
 }
 
-a.anchor {
-  display: block;
-  position: relative;
-  top: -150px;
-  visibility: hidden;
+@media screen and (max-width: 1023px) {
+  html {
+    scroll-padding-top: 80px;
+  }
 }

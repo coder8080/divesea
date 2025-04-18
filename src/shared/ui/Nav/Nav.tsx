@@ -23,11 +23,11 @@ const Nav = () => {
               <a class="nav-link" href="#collection">
                 Collection
               </a>
+              <a class="nav-link" href="#community">
+                Community
+              </a>
               <a class="nav-link" href="#sell">
                 Sell
-              </a>
-              <a class="nav-link" href="#stats">
-                Stats
               </a>
             </div>
           </div>
@@ -60,6 +60,9 @@ const Nav = () => {
         </a>
         <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#collection">
           Collection
+        </a>
+        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#community">
+          Community
         </a>
         <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#sell">
           Sell
