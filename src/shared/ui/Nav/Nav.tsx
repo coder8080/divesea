@@ -10,11 +10,11 @@ const Nav = () => {
 
   return (
     <>
-      <nav class="flex justify-center sticky top-0 w-full bg-[#f9f9f9]/40 backdrop-blur-3xl z-3 px-[28px] xl:px-0 xl:pt-[20px] xl:mt-[25px]">
-        <div class="max-w-[1200px] xl:flex flex-row items-center gap-[118px] h-[78px] pb-[20px] hidden">
-          <div class="flex flex-row gap-[57px] items-center">
+      <nav class="flex justify-center sticky top-0 w-full bg-[#f9f9f9]/40 backdrop-blur-3xl z-3 px-[28px] lg:px-0 lg:pt-[20px] lg:mt-[25px]">
+        <div class="lg:flex flex-row items-center gap-[80px] xl:gap-[100px] pb-[20px] hidden">
+          <div class="flex flex-row gap-[40px] xl:gap-[50px] items-center">
             <A href="/#">
-              <img src="/divesea/icons/logo.svg" class="w-[53px] h-[53px]" alt="Logo" />
+              <img src="/divesea/icons/logo.svg" class="w-[40px] xl:w-[50px] aspect-square" alt="Logo" />
             </A>
             <div class="flex flex-row gap-[24px]">
               <a class="nav-link" href="#weekly">
@@ -31,14 +31,14 @@ const Nav = () => {
               </a>
             </div>
           </div>
-          <div class="flex flex-row gap-[30px] items-center">
+          <div class="flex flex-row gap-[20px] xl:gap-[30px] items-center">
             <Search />
             <Button size="lg" fill>
               Connect Wallet
             </Button>
           </div>
         </div>
-        <div class="flex flex-row xl:hidden w-full py-[16px] justify-between">
+        <div class="flex flex-row lg:hidden w-full py-[16px] justify-between">
           <div class="flex flex-row gap-[7px] items-center">
             <img src="/divesea/icons/wave_black.svg" alt="Logo" />
             <span class="font-[Poppins] font-semibold text-[21.36px] text-black">DiveSea</span>

@@ -5,3 +5,9 @@
   font-size: 18px;
   color: #606060;
 }
+
+@media screen and (max-width: 1279px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
