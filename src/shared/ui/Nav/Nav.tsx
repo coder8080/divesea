@@ -26,8 +26,8 @@ const Nav = () => {
               <a class="nav-link" href="#community">
                 Community
               </a>
-              <a class="nav-link" href="#sell">
-                Sell
+              <a class="nav-link" href="#faq">
+                FAQ
               </a>
             </div>
           </div>
@@ -55,17 +55,17 @@ const Nav = () => {
         }}
         onClick={toggle}
       >
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#weekly">
+        <a class="uppercase font-[Inter] font-medium text-[#323142] text-[24px]" href="#weekly">
           Weekly
         </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#collection">
+        <a class="uppercase font-[Inter] font-medium text-[#323142] text-[24px]" href="#collection">
           Collection
         </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#community">
+        <a class="uppercase font-[Inter] font-medium text-[#323142] text-[24px]" href="#community">
           Community
         </a>
-        <a class="uppercase font-[Inter] font-medium text-[#606060] text-[24px]" href="#sell">
-          Sell
+        <a class="uppercase font-[Inter] font-medium text-[#323142] text-[24px]" href="#faq">
+          FAQ
         </a>
       </div>
     </>

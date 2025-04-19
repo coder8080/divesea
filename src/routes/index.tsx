@@ -305,7 +305,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="mt-[100px]">
+        <div class="mt-[100px]" id="faq">
           <h1 class="text-center mx-auto font-[Poppins] font-semibold text-[24px]/[120%] lg:text-[34px]/[120%] xl:text-[48px]/[140%] text-[#18181B] mb-[60px] xl:mb-[80px]">
             Frequently Asked
             <br />
