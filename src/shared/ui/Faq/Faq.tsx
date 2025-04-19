@@ -7,7 +7,7 @@ const Faq = () => {
   const isActive = createSelector(activeId)
 
   return (
-    <div class="flex flex-col items-center gap-[4px] lg:px-[70px]">
+    <div class="flex flex-col items-center gap-[4px] lg:gap-[12px] xl:gap-[16px] lg:px-[70px] xl:px-[100px]">
       <For each={QUESTIONS}>
         {(item) => (
           <Question
