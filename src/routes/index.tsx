@@ -13,7 +13,7 @@ import GridRow from "~/shared/ui/GridRow"
 import ListItem from "~/shared/ui/ListItem"
 import Account from "~/shared/ui/Account"
 import PageTitle from "~/shared/ui/PageTitle"
-import Faq from "~/shared/ui/Faq/Faq"
+import Faq from "~/shared/ui/Faq"
 
 export default function Home() {
   createEffect(() => {
@@ -306,8 +306,10 @@ export default function Home() {
           </div>
         </div>
         <div class="mt-[100px]">
-          <h1 class="text-center mx-auto font-[Poppins] font-semibold text-[24px]/[120%] text-[#18181B] max-w-[220px] mb-[60px]">
-            Frequently Asked <span class="text-[#D3D2D2]">Questions</span>
+          <h1 class="text-center mx-auto font-[Poppins] font-semibold text-[24px]/[120%] lg:text-[34px]/[120%] text-[#18181B] mb-[60px]">
+            Frequently Asked
+            <br />
+            <span class="text-[#D3D2D2]">Questions</span>
           </h1>
           <Faq />
         </div>
