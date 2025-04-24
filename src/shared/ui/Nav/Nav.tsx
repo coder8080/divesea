@@ -10,7 +10,10 @@ const Nav = () => {
 
   return (
     <>
-      <nav class="flex justify-center sticky top-0 w-full bg-[#f9f9f9]/40 backdrop-blur-3xl z-3 px-[28px] lg:px-0 lg:pt-[20px] lg:mt-[25px]">
+      <nav
+        class="flex justify-center sticky top-0 w-full bg-[#f9f9f9]/40 backdrop-blur-3xl z-3 px-[28px] lg:px-0 lg:pt-[20px] lg:mt-[25px]"
+        style="-webkit-backdrop-filter: blur(60px);"
+      >
         <div class="lg:flex flex-row items-center gap-[80px] xl:gap-[100px] pb-[20px] hidden">
           <div class="flex flex-row gap-[40px] xl:gap-[50px] items-center">
             <A href="/#">
